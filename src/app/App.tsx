@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { Analytics } from '@vercel/analytics/react';
 import { quizQuestions } from "./data/quizData";
 import { QuizQuestion } from "./components/QuizQuestion";
 import { QuizResults } from "./components/QuizResults";
@@ -361,6 +362,7 @@ export default function App() {
           </div>
         </div>
       </motion.div>
+      <Analytics />
     </div>
   );
 }
