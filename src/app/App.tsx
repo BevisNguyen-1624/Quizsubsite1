@@ -4,6 +4,7 @@ import { quizQuestions } from "./data/quizData";
 import { QuizQuestion } from "./components/QuizQuestion";
 import { QuizResults } from "./components/QuizResults";
 import { PersonalIdEntry } from "./components/PersonalIdEntry";
+import type { CSSProperties } from "react";
 
 type Phase = "intro" | "id" | "quiz" | "results";
 
@@ -14,7 +15,7 @@ function FloatingOrb({
 }: {
   size: number;
   color: string;
-  style: React.CSSProperties;
+  style: CSSProperties;
 }) {
   return (
     <motion.div
@@ -186,8 +187,7 @@ export default function App() {
               background:
                 "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
             }}
-              >// ...existing code...
-
+              >
 <div
   className="h-1.5 w-full"
   style={{
@@ -214,6 +214,11 @@ export default function App() {
       background:
         "linear-gradient(90deg, transparent, #bfdbfe 40%, #c4b5fd 60%, transparent)",
     }}
+  />
+
+  {/* Content Area */}
+  <AnimatePresence mode="wait">
+    {phase === "intro" && (
   />
 
   {/* Content Area */}
