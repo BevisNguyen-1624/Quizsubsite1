@@ -4,220 +4,247 @@ export interface Question {
   options: { key: string; text: string }[];
   correctAnswer: string;
   explanation: string;
+  imageUrl?: string;
 }
 
 export const quizQuestions: Question[] = [
   {
     id: 1,
-    question:
-      "Theo Edgar Schein, thành tố nào sau đây KHÔNG thuộc vào nhóm 'Biểu hiện quan sát được' của văn hóa doanh nghiệp?",
+    question: "YODY được thành lập vào ngày tháng năm nào?",
     options: [
-      { key: "A", text: "Kiến trúc và không gian làm việc." },
-      {
-        key: "B",
-        text: "Các giả định ngầm định (Underlying Assumptions).",
-      },
-      { key: "C", text: "Nghi lễ và lễ kỷ niệm." },
-      { key: "D", text: "Cách thức xưng hô và ngôn ngữ sử dụng." },
+      { key: "A", text: "25/04/2015" },
+      { key: "B", text: "24/5/2015" },
+      { key: "C", text: "24/05/2014" },
+      { key: "D", text: "25/04/2014" },
     ],
-    correctAnswer: "B",
-    explanation:
-      "Các giả định ngầm định (Assumptions) nằm ở tầng sâu nhất, không thể quan sát trực tiếp. Artifacts là tầng bề mặt (trang phục, nghi lễ, hành vi xưng hô...) và hoàn toàn có thể quan sát được.",
+    correctAnswer: "D",
+    explanation: ""
   },
   {
     id: 2,
-    question:
-      "Mô hình 3 tầng văn hóa của Edgar Schein bao gồm những tầng nào theo thứ tự từ ngoài vào trong?",
+    question: "YODY ra mắt sự kiện Fashion Show đầu tiên vào năm nào?",
     options: [
-      {
-        key: "A",
-        text: "Artifacts → Espoused Values → Underlying Assumptions.",
-      },
-      { key: "B", text: "Core Values → Behaviors → Symbols." },
-      { key: "C", text: "Vision → Mission → Values." },
-      { key: "D", text: "Beliefs → Norms → Behaviors." },
+      { key: "A", text: "2013" },
+      { key: "B", text: "2014" },
+      { key: "C", text: "2015" },
+      { key: "D", text: "2016" },
     ],
-    correctAnswer: "A",
-    explanation:
-      "Mô hình Schein gồm 3 tầng: Tầng 1 - Artifacts (biểu hiện bề mặt), Tầng 2 - Espoused Values (giá trị tuyên bố), Tầng 3 - Underlying Assumptions (giả định ngầm định sâu nhất, khó thay đổi nhất).",
+    correctAnswer: "B",
+    explanation: ""
   },
   {
     id: 3,
-    question:
-      "Đâu là dấu hiệu cho thấy văn hóa doanh nghiệp đang được hình thành 'by default' (mặc nhiên) thay vì 'by design' (có chủ đích)?",
+    question: "YODY đã chính thức nhận được bao nhiêu chứng nhận Kỷ lục Việt Nam?",
     options: [
-      { key: "A", text: "Doanh nghiệp có bộ core values được công bố rõ ràng." },
-      {
-        key: "B",
-        text: "Nhân viên hành động dựa trên 'cảm tính' và thói quen không được định hướng.",
-      },
-      {
-        key: "C",
-        text: "Ban lãnh đạo thường xuyên tổ chức các buổi đào tạo văn hóa.",
-      },
-      {
-        key: "D",
-        text: "Có hệ thống đánh giá năng lực hành vi hàng năm.",
-      },
+      { key: "A", text: "1" },
+      { key: "B", text: "2" },
+      { key: "C", text: "3" },
+      { key: "D", text: "4" },
     ],
     correctAnswer: "B",
-    explanation:
-      "Khi nhân viên hành động theo cảm tính và thói quen không được định hướng, đó là dấu hiệu văn hóa đang hình thành mặc nhiên. Văn hóa 'by design' đòi hỏi sự chủ đích rõ ràng từ lãnh đạo và cả một hệ thống vận hành đồng bộ.",
+    explanation: ""
   },
   {
     id: 4,
-    question:
-      "Trong hệ thống tư duy VHDN, 'Core Values' (giá trị cốt lõi) khác với 'Espoused Values' (giá trị tuyên bố) ở điểm nào?",
+    question: "Đây là hình ảnh trong bộ sưu tập nào của YODY?",
     options: [
-      {
-        key: "A",
-        text: "Core Values là do ban lãnh đạo đặt ra, Espoused Values do nhân viên tự xác định.",
-      },
-      {
-        key: "B",
-        text: "Core Values được thể hiện qua hành vi thực tế, Espoused Values chỉ là tuyên bố trên giấy tờ.",
-      },
-      {
-        key: "C",
-        text: "Core Values thay đổi theo chiến lược, Espoused Values cố định theo thời gian.",
-      },
-      { key: "D", text: "Không có sự khác biệt, hai khái niệm này đồng nghĩa." },
+      { key: "A", text: "BST Mặc đẹp đón Tết 2015" },
+      { key: "B", text: "BST Tết 2016" },
     ],
-    correctAnswer: "B",
-    explanation:
-      "Core Values thực sự là những giá trị được thể hiện qua hành vi hàng ngày. Espoused Values là những gì tổ chức tuyên bố nhưng chưa chắc đã thực hành. Khoảng cách giữa hai điều này là dấu hiệu của văn hóa thiếu nhất quán.",
+    correctAnswer: "A",
+    explanation: ""
   },
   {
     id: 5,
-    question:
-      "Yếu tố nào được coi là QUAN TRỌNG NHẤT trong việc xây dựng văn hóa doanh nghiệp bền vững?",
+    question: "Cửa hàng YODY đầu tiên được mở tại địa chỉ nào?",
     options: [
-      {
-        key: "A",
-        text: "Ngân sách đầu tư cho các hoạt động team building.",
-      },
-      {
-        key: "B",
-        text: "Hành vi và cách ứng xử của người lãnh đạo.",
-      },
-      {
-        key: "C",
-        text: "Số lượng nhân viên tham gia các khóa đào tạo.",
-      },
-      { key: "D", text: "Môi trường và cơ sở vật chất văn phòng." },
+      { key: "A", text: "64 Phạm Ngũ Lão" },
+      { key: "B", text: "99 Trường Chinh" },
+      { key: "C", text: "22 Chùa Bộc" },
+      { key: "D", text: "45 Hồng Quang" },
     ],
-    correctAnswer: "B",
-    explanation:
-      "Lãnh đạo chính là 'kiến trúc sư' của văn hóa. Những gì lãnh đạo làm, khen thưởng, trừng phạt và chú ý đến sẽ định hình văn hóa mạnh hơn bất kỳ tuyên bố hay chính sách nào.",
+    correctAnswer: "C",
+    explanation: ""
   },
   {
     id: 6,
-    question:
-      "Theo tư duy hệ thống, điều gì xảy ra khi một doanh nghiệp có 'culture gap' (khoảng cách văn hóa)?",
+    question: "Văn phòng tháng hoa của YODY chính thức đi vào hoạt động từ năm nào?",
     options: [
-      {
-        key: "A",
-        text: "Nhân viên làm việc hiệu quả hơn do có sự cạnh tranh nội bộ.",
-      },
-      {
-        key: "B",
-        text: "Doanh nghiệp dễ dàng thích nghi với sự thay đổi thị trường.",
-      },
-      {
-        key: "C",
-        text: "Hành vi thực tế của tổ chức mâu thuẫn với giá trị tuyên bố, gây mất niềm tin.",
-      },
-      { key: "D", text: "Văn hóa trở nên đa dạng và phong phú hơn." },
+      { key: "A", text: "2013" },
+      { key: "B", text: "2014" },
+      { key: "C", text: "2015" },
+      { key: "D", text: "2016" },
     ],
     correctAnswer: "C",
-    explanation:
-      "Culture gap tạo ra sự mâu thuẫn giữa 'nói' và 'làm'. Điều này gây mất niềm tin nội bộ, giảm gắn kết nhân viên và làm suy yếu thương hiệu tuyển dụng của doanh nghiệp.",
+    explanation: ""
   },
   {
     id: 7,
-    question:
-      "Trong mô hình '4 Cấp độ Trưởng thành Văn hóa', cấp độ nào thể hiện tổ chức đã đạt đến mức văn hóa tự vận hành như một hệ điều hành?",
+    question: "YODY là viết tắt của từ nào?",
     options: [
-      { key: "A", text: "Cấp độ 1 - Văn hóa ngẫu nhiên (by default)." },
-      { key: "B", text: "Cấp độ 2 - Văn hóa nhận thức." },
-      { key: "C", text: "Cấp độ 3 - Văn hóa có chủ đích (by design)." },
-      { key: "D", text: "Cấp độ 4 - Văn hóa tự vận hành." },
+      { key: "A", text: "Youth & Destiny" },
+      { key: "B", text: "Young & Dynamic" },
+      { key: "C", text: "Year Of Dreamy" },
+      { key: "D", text: "Young & Delight" },
     ],
-    correctAnswer: "D",
-    explanation:
-      "Cấp độ 4 là đỉnh cao khi văn hóa đã ăn sâu vào ADN tổ chức và tự vận hành không cần kiểm soát thường xuyên. Đây là khi văn hóa thực sự trở thành lợi thế cạnh tranh bền vững.",
+    correctAnswer: "B",
+    explanation: ""
   },
   {
     id: 8,
-    question:
-      "Phương pháp nào hiệu quả nhất để 'giải mã' văn hóa hiện tại của một doanh nghiệp?",
+    question: "Sản phẩm áo gió 3C của YODY bao gồm những chữ C nào?",
     options: [
-      { key: "A", text: "Đọc bản sứ mệnh và tầm nhìn của công ty." },
-      {
-        key: "B",
-        text: "Quan sát hành vi thực tế, câu chuyện được kể và những gì được khen/phạt.",
-      },
-      { key: "C", text: "Khảo sát ý kiến nhân viên về văn hóa công ty." },
-      {
-        key: "D",
-        text: "Phân tích báo cáo tài chính và kết quả kinh doanh.",
-      },
+      { key: "A", text: "Chống thấm - Chống lạnh - Chống bụi" },
+      { key: "B", text: "Cản gió - Cản nhiệt - Cản khuẩn" },
+      { key: "C", text: "Cao cấp - Chất lượng - Co giãn" },
+      { key: "D", text: "Cản gió - Cản nước - Cản bụi" },
     ],
-    correctAnswer: "B",
-    explanation:
-      "Văn hóa thực sự nằm ở những gì xảy ra hàng ngày. Quan sát các câu chuyện kể, nghi lễ, biểu tượng và đặc biệt là hành vi được khen thưởng/trừng phạt sẽ tiết lộ văn hóa thực của tổ chức.",
+    correctAnswer: "D",
+    explanation: ""
   },
   {
     id: 9,
-    question:
-      "Tại sao việc biến Core Values thành 'Năng lực cốt lõi' (Core Competencies) lại quan trọng trong hệ thống VHDN?",
+    question: "Đâu không phải là 1 trong số những chiến dịch của YODY từ trước tới nay?",
     options: [
-      {
-        key: "A",
-        text: "Giúp doanh nghiệp tiết kiệm chi phí đào tạo nhân viên.",
-      },
-      {
-        key: "B",
-        text: "Làm cho văn hóa trở nên cụ thể, đo lường được và có thể phát triển.",
-      },
-      {
-        key: "C",
-        text: "Tạo ra sự cạnh tranh lành mạnh giữa các phòng ban.",
-      },
-      {
-        key: "D",
-        text: "Đáp ứng yêu cầu của nhà đầu tư và cổ đông.",
-      },
+      { key: "A", text: "Bán hàng toàn dân" },
+      { key: "B", text: "Sản phẩm chất lượng cao, dịch vụ 5 sao, giá bình dân" },
+      { key: "C", text: "Bùng nổ doanh thu" },
+      { key: "D", text: "Đánh phải thắng" },
     ],
-    correctAnswer: "B",
-    explanation:
-      "Khi Core Values được chuyển hóa thành năng lực hành vi cụ thể, chúng có thể đo lường, đánh giá và phát triển. Điều này biến văn hóa từ khái niệm trừu tượng thành công cụ quản trị thực tế.",
+    correctAnswer: "C",
+    explanation: ""
   },
   {
     id: 10,
-    question:
-      "Điều nào sau đây ĐÚNG nhất về mối quan hệ giữa văn hóa doanh nghiệp và chiến lược kinh doanh?",
+    question: "Cửa hàng YODY có diện tích lớn nhất và từng được công nhận là cửa hàng lớn nhất Đông Nam Á là cửa hàng nào?",
     options: [
-      {
-        key: "A",
-        text: "Chiến lược luôn quan trọng hơn văn hóa trong việc quyết định thành công.",
-      },
-      {
-        key: "B",
-        text: "Văn hóa và chiến lược hoàn toàn độc lập, không ảnh hưởng lẫn nhau.",
-      },
-      {
-        key: "C",
-        text: "Văn hóa mạnh có thể 'nuốt chửng' chiến lược nếu không được quản trị đúng cách.",
-      },
-      {
-        key: "D",
-        text: "Chỉ cần có chiến lược tốt, văn hóa sẽ tự hình thành phù hợp.",
-      },
+      { key: "A", text: "YODY Thái Bình 3" },
+      { key: "B", text: "YODY Buôn Ma Thuột" },
+      { key: "C", text: "YODY Ngã Bảy" },
+      { key: "D", text: "YODY Bắc Giang 3" },
+    ],
+    correctAnswer: "D",
+    explanation: ""
+  },
+  {
+    id: 11,
+    question: "YODY lần lượt đặt chân vào Miền Trung và Miền Nam vào năm nào?",
+    options: [
+      { key: "A", text: "2014 - 2022" },
+      { key: "B", text: "2017 - 2022" },
+      { key: "C", text: "2018 - 2023" },
+      { key: "D", text: "2015 - 2023" },
+    ],
+    correctAnswer: "B",
+    explanation: ""
+  },
+  {
+    id: 12,
+    question: "Trong năm 2025, YODY đã bán được bao nhiêu sản phẩm áo Polo?",
+    options: [
+      { key: "A", text: "Gần 1 triệu sản phẩm" },
+      { key: "B", text: "Trên 3 triệu sản phẩm" },
+      { key: "C", text: "4 triệu sản phẩm" },
+      { key: "D", text: "Xấp xỉ 2 triệu sản phẩm" },
+    ],
+    correctAnswer: "D",
+    explanation: ""
+  },
+  {
+    id: 13,
+    question: "Đâu là đáp án đúng về tầm nhìn của YODY?",
+    options: [
+      { key: "A", text: "Make everyone lookgood - feel good" },
+      { key: "B", text: "Tự do trong từng chuyển động" },
+      { key: "C", text: "Everyday wear for everyone" },
+      { key: "D", text: "Lookgood - Feelgood" },
     ],
     correctAnswer: "C",
-    explanation:
-      "Peter Drucker từng nói 'Culture eats strategy for breakfast'. Văn hóa mạnh nhưng không phù hợp có thể phá hoại chiến lược tốt nhất. Ngược lại, văn hóa mạnh và phù hợp là đòn bẩy giúp chiến lược thành công.",
+    explanation: ""
+  },
+  {
+    id: 14,
+    question: "Phần mềm bán hàng Unicorn được ra đời vào năm nào?",
+    options: [
+      { key: "A", text: "2021" },
+      { key: "B", text: "2022" },
+      { key: "C", text: "2023" },
+      { key: "D", text: "2024" },
+    ],
+    correctAnswer: "B",
+    explanation: ""
+  },
+  {
+    id: 15,
+    question: "YODY đã chính thức đổi màu thương hiệu từ Đen trắng - Xanh vàng vào năm bao nhiêu?",
+    options: [
+      { key: "A", text: "2018" },
+      { key: "B", text: "2020" },
+      { key: "C", text: "2021" },
+      { key: "D", text: "2022" },
+    ],
+    correctAnswer: "B",
+    explanation: ""
+  },
+  {
+    id: 16,
+    question: "Năm 2016, YODY đã cán mốc bao nhiêu cửa hàng?",
+    options: [
+      { key: "A", text: "18 cửa hàng" },
+      { key: "B", text: "20 cửa hàng" },
+      { key: "C", text: "38 cửa hàng" },
+      { key: "D", text: "48 cửa hàng" },
+    ],
+    correctAnswer: "C",
+    explanation: ""
+  },
+  {
+    id: 17,
+    question: "Đâu không phải là KOL từng kết hợp cùng các BST của YODY?",
+    options: [
+      { key: "A", text: "Diễn viên Hồng Đăng - Hồng Diễm" },
+      { key: "B", text: "Cầu thủ Văn Toàn" },
+      { key: "C", text: "Diễn viên Bình An - Á hậu Phương Nga" },
+      { key: "D", text: "Hoa hậu Đỗ Thị Hà" },
+    ],
+    correctAnswer: "D",
+    explanation: ""
+  },
+  {
+    id: 18,
+    question: "YODY đã lọt vào Top 100 Doanh nghiệp có môi trường làm việc tốt nhất vào năm nào?",
+    options: [
+      { key: "A", text: "2021" },
+      { key: "B", text: "2022" },
+      { key: "C", text: "2023" },
+      { key: "D", text: "2024" },
+    ],
+    correctAnswer: "C",
+    explanation: ""
+  },
+  {
+    id: 19,
+    question: "Đây là hình ảnh trong BST nào của YODY?",
+    options: [
+      { key: "A", text: "Kết nối vạn vật" },
+      { key: "B", text: "Kỷ nguyên mới" },
+      { key: "C", text: "Chạm tới tương lai" },
+      { key: "D", text: "Vững bước vươn xa" },
+    ],
+    correctAnswer: "C",
+    explanation: ""
+  },
+  {
+    id: 20,
+    question: "Năm 2026 được YODY gọi là năm gì?",
+    options: [
+      { key: "A", text: "Tái sinh" },
+      { key: "B", text: "Nền tảng" },
+      { key: "C", text: "Bứt tốc" },
+      { key: "D", text: "Đột phá" },
+    ],
+    correctAnswer: "B",
+    explanation: ""
   },
 ];
 
@@ -231,42 +258,33 @@ export interface ScoreResult {
 
 export const scoreResults: ScoreResult[] = [
   {
-    range: "0-3",
-    title: "Bắt đầu hành trình khám phá!",
+    range: "0-16",
+    title: "Cảm ơn bạn đã tham gia hành trình SĂN DẤU YODY 🔍",
     description:
-      'Bạn đang ở điểm xuất phát — và đó là điều hoàn toàn bình thường! Văn hóa doanh nghiệp là một hệ thống phức tạp, đòi hỏi thời gian để thấu hiểu. Nếu bạn thấy mình đang trả lời dựa trên "cảm tính", văn hóa tổ chức nơi bạn làm việc có thể đang được hình thành ngẫu nhiên (by default) thay vì có chủ đích (by design).\n\nTại Culture Code 101, chúng tôi không thảo luận về lý thuyết suông. Chúng tôi cung cấp Hệ thống Giải mã & Thực thi chuẩn mực: từ 3 Biểu hiện quan sát được (Schein), 4 Cấp độ Trưởng thành (Dashboard), đến Phương pháp luận biến Core Values thành Năng lực cốt lõi.\n\nĐừng để Văn hóa là một khái niệm trừu tượng. Hãy biến nó thành một Hệ điều hành chính xác cho sự tăng trưởng!',
-    buttonText: "Khám phá Culture Code 101",
-    emoji: "🌱",
-  },
-  {
-    range: "4-6",
-    title: "Bạn đang trên đúng hướng!",
-    description:
-      'Bạn đã có nền tảng nhất định về tư duy hệ thống VHDN — nhưng vẫn còn nhiều "điểm mù" cần được soi sáng. Hiểu lý thuyết chỉ là bước đầu; thách thức thực sự là biến kiến thức thành hành động có hệ thống.\n\nTại Culture Code 101, chúng tôi không thảo luận về lý thuyết suông. Chúng tôi cung cấp Hệ thống Giải mã & Thực thi chuẩn mực: từ 3 Biểu hiện quan sát được (Schein), 4 Cấp độ Trưởng thành (Dashboard), đến Phương pháp luận biến Core Values thành Năng lực cốt lõi.\n\nĐừng để Văn hóa là một khái niệm trừu tượng. Hãy biến nó thành một Hệ điều hành chính xác cho sự tăng trưởng!',
+      'Có vẻ một vài “dấu vết” vẫn còn đang ẩn mình khá kỹ rồi! Đừng lo, mỗi câu hỏi là một mảnh ghép của hành trình 12 năm, và chúng ta hoàn toàn có thể khám phá lại bất cứ lúc nào tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/)". \nCảm ơn bạn đã tham gia và hẹn gặp lại ở những hoạt động tiếp theo trong Hành trình Tuần lễ văn hoá Tháng 4 nhé! \nYODY xin cảm ơn!',
     buttonText: "Nâng tầm tư duy tại Culture Code 101",
     emoji: "🚀",
   },
   {
-    range: "7-9",
+    range: "17-19",
     title: "Tư duy hệ thống của bạn rất ấn tượng!",
     description:
-      'Bạn nắm vững phần lớn nền tảng tư duy hệ thống về VHDN — đây là một lợi thế cạnh tranh thực sự! Tuy nhiên, biết là chưa đủ; sự khác biệt nằm ở khả năng TRIỂN KHAI và XÂY DỰNG hệ thống văn hóa trong thực tế tổ chức.\n\nTại Culture Code 101, chúng tôi không thảo luận về lý thuyết suông. Chúng tôi cung cấp Hệ thống Giải mã & Thực thi chuẩn mực: từ 3 Biểu hiện quan sát được (Schein), 4 Cấp độ Trưởng thành (Dashboard), đến Phương pháp luận biến Core Values thành Năng lực cốt lõi.\n\nĐừng để Văn hóa là một khái niệm trừu tượng. Hãy biến nó thành một Hệ điều hành chính xác cho sự tăng trưởng!',
+      'BWow, bạn đã đi rất xa trên hành trình SĂN DẤU YODY rồi 🔍Chỉ còn một chút nữa thôi là bạn đã có thể “phá đảo” toàn bộ dấu vết! Một vài chi tiết nhỏ có thể đã “đánh lừa” bạn, nhưng không sao, bạn có thể kiểm tra lại tất cả các cột mốc tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/).\nCảm ơn bạn đã tham gia và hẹn gặp lại ở những hoạt động tiếp theo trong Hành trình Tuần lễ văn hoá Tháng 4 nhé! \nYODY xin cảm ơn!',
     buttonText: "Hoàn thiện hệ thống tại Culture Code 101",
     emoji: "⭐",
   },
   {
-    range: "10",
+    range: "20",
     title: "Xuất sắc! Bạn là chuyên gia VHDN!",
     description:
-      'Điểm tuyệt đối! Bạn đã nắm vững toàn bộ nền tảng tư duy hệ thống VHDN theo mô hình Culture Code. Đây là một thành tựu đáng tự hào và cho thấy bạn đã có tư duy rất sắc bén về quản trị văn hóa doanh nghiệp.\n\nTại Culture Code 101, chúng tôi không thảo luận về lý thuyết suông. Chúng tôi cung cấp Hệ thống Giải mã & Thực thi chuẩn mực: từ 3 Biểu hiện quan sát được (Schein), 4 Cấp độ Trưởng thành (Dashboard), đến Phương pháp luận biến Core Values thành Năng lực cốt lõi.\n\nBạn đã sẵn sàng biến Văn hóa thành Hệ điều hành chính xác cho sự tăng trưởng của tổ chức!',
+      '🎉 XIN CHÚC MỪNG! \nBạn đã chính thức “phá tảng băng” thứ hai - minigame SĂN DẤU YODY! 🎉 Không chỉ là 20/20 điểm, mà còn là minh chứng cho việc bạn thực sự hiểu và đồng hành cùng hành trình của YODY qua từng cột mốc. Hành trình 12 năm vẫn còn rất nhiều câu chuyện thú vị đang chờ bạn khám phá thêm tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/). Biết đâu bạn sẽ tìm thấy những “dấu ấn” mà mình chưa từng để ý trước đây 🔍 \nCảm ơn bạn đã tham gia và hẹn gặp lại ở những hoạt động tiếp theo trong Hành trình Tuần lễ văn hoá Tháng 4 nhé! \nYODY xin cảm ơn!!',
     buttonText: "Đăng ký Culture Code 101 ngay",
     emoji: "🏆",
   },
 ];
 
 export function getScoreResult(score: number): ScoreResult {
-  if (score <= 3) return scoreResults[0];
-  if (score <= 6) return scoreResults[1];
-  if (score <= 9) return scoreResults[2];
-  return scoreResults[3];
+  if (score <= 16) return scoreResults[0];
+  if (score <= 19) return scoreResults[1];
+  return scoreResults[2];
 }
