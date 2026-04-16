@@ -150,7 +150,7 @@ export default function App() {
       ))}
 
       {/* Main Card */}
-      <motion.div>
+      <motion.div
         ref={cardRef}
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
