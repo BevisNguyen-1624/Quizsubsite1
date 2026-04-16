@@ -241,8 +241,7 @@ export default function App() {
                         }}
                       >
                       </div>
-                      <div className="text-left">
-                      </div>
+                      
                     </div>
 
                     <div className="rounded-3xl border border-slate-200 bg-white/90 p-5 text-left shadow-sm">
@@ -265,12 +264,15 @@ export default function App() {
                         </li>
                       </ul>
                     </div>
-                    <p className="text-sm text-slate-500 uppercase tracking-[0.18em] mb-2">
+                    <div className="text-left">
+                        <p className="text-sm text-slate-500 uppercase tracking-[0.18em] mb-2">
                           Cùng khám phá
                         </p>
                         <h2 className="text-2xl font-semibold text-slate-900">
                           LỊCH SỬ CỦA YODY NHÉ!
                         </h2>
+                      </div>
+
                     <p className="text-sm leading-7 text-slate-600">
                       💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại
                       <a
