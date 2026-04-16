@@ -187,38 +187,32 @@ export default function App() {
               background:
                 "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
             }}
-              >
-<div
-  className="h-1.5 w-full"
-  style={{
-    background:
-      "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
-  }}
->
-  <div>
-    <motion.h1 className="flex items-center gap-2">
-      <svg
-        width="44"
-        height="44"
-        viewBox="0 0 44 44"
-        fill="none"
-      />
-      **SĂN DẤU YODY
-    </motion.h1>
-  </div>
+          />
+          <div className="p-6">
+            <div className="mb-6">
+              <motion.h1 className="flex items-center gap-2 text-2xl font-bold">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                />
+                SĂN DẤU YODY
+              </motion.h1>
+            </div>
 
-  {/* Divider */}
-  <div
-    className="w-full h-px mb-6"
-    style={{
-      background:
-        "linear-gradient(90deg, transparent, #bfdbfe 40%, #c4b5fd 60%, transparent)",
-    }}
-  />
-  
-  {/* Content Area */}
-  <AnimatePresence mode="wait">
-    {phase === "intro" && (
+            {/* Divider */}
+            <div
+              className="w-full h-px mb-6"
+              style={{
+                background:
+                  "linear-gradient(90deg, transparent, #bfdbfe 40%, #c4b5fd 60%, transparent)",
+              }}
+            />
+
+            {/* Content Area */}
+            <AnimatePresence mode="wait">
+              {phase === "intro" && (
                 <motion.div
                   key="intro"
                   initial={{ opacity: 0, y: 16 }}
@@ -226,14 +220,47 @@ export default function App() {
                   exit={{ opacity: 0, y: -16 }}
                   transition={{ duration: 0.4 }}
                   className="flex flex-col items-center text-center gap-4"
-                > Chào mừng bạn đến với minigame SĂN DẤU YODY 🔍 nằm trong khuôn khổ Hành trình Tuần lễ văn hoá - một hành trình nhỏ để cùng nhìn lại những dấu mốc đã làm nên YODY của hôm nay.
-Thể lệ tham gia:
-- Mỗi nhân sự chỉ tham gia 01 lần duy nhất.
-- Chọn đáp án bạn cho là chính xác nhất cho mỗi câu hỏi, tổng cộng có 20 câu hỏi.
-- Nhân sự sẽ được ghi nhận là đã tham gia Ngày 2 sau khi hoàn thành game và bấm Gửi.
-- Nhân sự trả lời đúng 20/20 câu sẽ được cộng ngay 50 điểm Y-Point.
-💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/) – nơi tổng hợp những cột mốc đáng nhớ trong hành trình 12 năm nhé!
-Bạn đã sẵn sàng chưa? Cùng bắt đầu hành trình “truy vết” và xem bạn hiểu YODY đến đâu nhé! 🍀
+                >
+                  <div className="max-w-2xl text-left space-y-4">
+                    <p>
+                      Chào mừng bạn đến với minigame SĂN DẤU YODY 🔍 nằm trong
+                      khuôn khổ Hành trình Tuần lễ văn hoá - một hành trình nhỏ để
+                      cùng nhìn lại những dấu mốc đã làm nên YODY của hôm nay.
+                    </p>
+                    <p>Thể lệ tham gia:</p>
+                    <ul className="list-disc pl-5 text-left">
+                      <li>Mỗi nhân sự chỉ tham gia 01 lần duy nhất.</li>
+                      <li>
+                        Chọn đáp án bạn cho là chính xác nhất cho mỗi câu hỏi,
+                        tổng cộng có 20 câu hỏi.
+                      </li>
+                      <li>
+                        Nhân sự sẽ được ghi nhận là đã tham gia Ngày 2 sau khi
+                        hoàn thành game và bấm Gửi.
+                      </li>
+                      <li>
+                        Nhân sự trả lời đúng 20/20 câu sẽ được cộng ngay 50
+                        điểm Y-Point.
+                      </li>
+                    </ul>
+                    <p>
+                      💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại
+                      <a
+                        href="https://dongthoigian.yody.io/"
+                        className="text-blue-600 underline"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Landing page DÒNG THỜI GIAN YODY
+                      </a>
+                      – nơi tổng hợp những cột mốc đáng nhớ trong hành trình 12
+                      năm nhé!
+                    </p>
+                    <p>
+                      Bạn đã sẵn sàng chưa? Cùng bắt đầu hành trình “truy vết” và
+                      xem bạn hiểu YODY đến đâu nhé! 🍀
+                    </p>
+                  </div>
                   <div
                     className="min-w-[80px] min-h-[80px] rounded-xl flex items-center justify-center text-4xl"
                     style={{
