@@ -305,7 +305,3 @@ export default function App() {
                   </button>
                 </motion.div>
               )}
-
-              {phase === "id" && (
-                <PersonalIdEntry onSubmit={handleIdSubmit} />
-              )}
