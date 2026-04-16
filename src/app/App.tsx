@@ -192,10 +192,8 @@ export default function App() {
                   height="44"
                   viewBox="0 0 44 44"
                   fill="none"
-                >
-                SĂN DẤU YODY
+                > *SĂN DẤU YODY 
               </motion.h1>
-            </div>
 
             {/* Divider */}
             <div
