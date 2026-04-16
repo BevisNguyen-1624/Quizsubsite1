@@ -215,12 +215,7 @@ export default function App() {
         "linear-gradient(90deg, transparent, #bfdbfe 40%, #c4b5fd 60%, transparent)",
     }}
   />
-
-  {/* Content Area */}
-  <AnimatePresence mode="wait">
-    {phase === "intro" && (
-  />
-
+  
   {/* Content Area */}
   <AnimatePresence mode="wait">
     {phase === "intro" && (
