@@ -316,7 +316,6 @@ export default function App() {
                   userId={userId}
                   onRestart={handleRestart}
                 />
-              )}
             </AnimatePresence>
           </div>
         </div>
