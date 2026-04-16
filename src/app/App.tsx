@@ -155,7 +155,7 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative z-10 w-full mx-4"
-        style={{ maxWidth: "520px" }}
+        style={{ maxWidth: "720px" }}
       >
         {/* Glow ring behind card */}
         <div
@@ -186,26 +186,6 @@ export default function App() {
               background:
                 "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
             }}
-          />
-
-          <div className="px-6 pt-6 pb-7">
-            {/* Logo + Header */}
-            <div className="flex flex-col items-center mb-6">
-              {/* Logo badge */}
-              <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{
-                  delay: 0.2,
-                  duration: 0.5,
-                  type: "spring",
-                }}
-                className="w-14 h-14 rounded-2xl mb-3 flex items-center justify-center overflow-hidden"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #1a1a1a, #2d2d2d)",
-                  boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
-                }}
               >
                 <svg
                   width="44"
@@ -213,76 +193,7 @@ export default function App() {
                   viewBox="0 0 44 44"
                   fill="none"
                 >
-                  {/* Culture Code logo-like mark */}
-                  <rect
-                    width="44"
-                    height="44"
-                    rx="10"
-                    fill="#1a1a1a"
-                  />
-                  <text
-                    x="22"
-                    y="16"
-                    textAnchor="middle"
-                    fill="#f59e0b"
-                    fontSize="6"
-                    fontWeight="800"
-                    fontFamily="Arial, sans-serif"
-                    letterSpacing="0.5"
-                  >
-                    CULTURE
-                  </text>
-                  <text
-                    x="22"
-                    y="24"
-                    textAnchor="middle"
-                    fill="white"
-                    fontSize="6.5"
-                    fontWeight="900"
-                    fontFamily="Arial, sans-serif"
-                    letterSpacing="0.5"
-                  >
-                    CODE
-                  </text>
-                  <rect
-                    x="8"
-                    y="27"
-                    width="28"
-                    height="2"
-                    rx="1"
-                    fill="#e53e3e"
-                  />
-                  <text
-                    x="22"
-                    y="37"
-                    textAnchor="middle"
-                    fill="#94a3b8"
-                    fontSize="4.5"
-                    fontFamily="Arial, sans-serif"
-                    letterSpacing="0.3"
-                  >
-                    101
-                  </text>
-                </svg>
-              </motion.div>
-
-              <motion.h1
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.4 }}
-                className="text-center tracking-wider"
-                style={{
-                  fontSize: "0.78rem",
-                  fontWeight: 800,
-                  letterSpacing: "0.12em",
-                  background:
-                    "linear-gradient(135deg, #f59e0b, #fb923c)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                CHECK-UP: TƯ DUY HỆ THỐNG VHD
+                SĂN DẤU YODY
               </motion.h1>
             </div>
 
@@ -305,9 +216,16 @@ export default function App() {
                   exit={{ opacity: 0, y: -16 }}
                   transition={{ duration: 0.4 }}
                   className="flex flex-col items-center text-center gap-4"
-                >
+                > Chào mừng bạn đến với minigame SĂN DẤU YODY 🔍 nằm trong khuôn khổ Hành trình Tuần lễ văn hoá - một hành trình nhỏ để cùng nhìn lại những dấu mốc đã làm nên YODY của hôm nay.
+Thể lệ tham gia:
+- Mỗi nhân sự chỉ tham gia 01 lần duy nhất.
+- Chọn đáp án bạn cho là chính xác nhất cho mỗi câu hỏi, tổng cộng có 20 câu hỏi.
+- Nhân sự sẽ được ghi nhận là đã tham gia Ngày 2 sau khi hoàn thành game và bấm Gửi.
+- Nhân sự trả lời đúng 20/20 câu sẽ được cộng ngay 50 điểm Y-Point.
+💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/) – nơi tổng hợp những cột mốc đáng nhớ trong hành trình 12 năm nhé!
+Bạn đã sẵn sàng chưa? Cùng bắt đầu hành trình “truy vết” và xem bạn hiểu YODY đến đâu nhé! 🍀
                   <div
-                    className="w-20 h-20 rounded-full flex items-center justify-center text-4xl"
+                    className="min-w-[80px] min-h-[80px] rounded-xl flex items-center justify-center text-4xl"
                     style={{
                       background:
                         "linear-gradient(135deg, #dbeafe, #ede9fe)",
@@ -325,7 +243,7 @@ export default function App() {
                         fontWeight: 800,
                       }}
                     >
-                      Bạn hiểu bao nhiêu về <br />
+                      CÙNG NHAU TÌM HIỂU VỀ <br />
                       <span
                         style={{
                           background:
@@ -335,7 +253,7 @@ export default function App() {
                           backgroundClip: "text",
                         }}
                       >
-                        Văn Hóa Doanh Nghiệp?
+                        LỊCH SỬ CỦA YODY NHÉ!
                       </span>
                     </h2>
                   </div>
@@ -353,7 +271,7 @@ export default function App() {
                         "0 4px 20px rgba(245,158,11,0.4)",
                     }}
                   >
-                    Bắt đầu kiểm tra ngay! 🚀
+                    Bắt đầu phá băng thôiiii! 🚀
                   </button>
                 </motion.div>
               )}
