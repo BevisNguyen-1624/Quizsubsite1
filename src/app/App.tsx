@@ -72,6 +72,14 @@ export default function App() {
     if (currentIndex + 1 >= questions.length) {
       setScore(newScore);
       setPhase("results");
+      
+      // Save result to MongoDB via backend
+      fetch('/api/save-result', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId, score: newScore })
+      }).catch(err => console.error("Failed to save result to DB", err));
+
     } else {
       setScore(newScore);
       setCurrentIndex((i) => i + 1);
