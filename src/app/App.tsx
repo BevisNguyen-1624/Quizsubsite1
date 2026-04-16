@@ -240,15 +240,8 @@ export default function App() {
                           boxShadow: "0 8px 24px rgba(99,102,241,0.15)",
                         }}
                       >
-                        🧠
                       </div>
                       <div className="text-left">
-                        <p className="text-sm text-slate-500 uppercase tracking-[0.18em] mb-2">
-                          Cùng khám phá
-                        </p>
-                        <h2 className="text-2xl font-semibold text-slate-900">
-                          LỊCH SỬ CỦA YODY NHÉ!
-                        </h2>
                       </div>
                     </div>
 
@@ -272,7 +265,12 @@ export default function App() {
                         </li>
                       </ul>
                     </div>
-
+                    <p className="text-sm text-slate-500 uppercase tracking-[0.18em] mb-2">
+                          Cùng khám phá
+                        </p>
+                        <h2 className="text-2xl font-semibold text-slate-900">
+                          LỊCH SỬ CỦA YODY NHÉ!
+                        </h2>
                     <p className="text-sm leading-7 text-slate-600">
                       💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại
                       <a
@@ -281,7 +279,7 @@ export default function App() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Landing page DÒNG THỜI GIAN YODY
+                         Landing page DÒNG THỜI GIAN YODY
                       </a>
                       – nơi tổng hợp những cột mốc đáng nhớ trong hành trình 12
                       năm nhé!
@@ -309,17 +307,3 @@ export default function App() {
               {phase === "id" && (
                 <PersonalIdEntry onSubmit={handleIdSubmit} />
               )}
-                <QuizResults
-                  key="results"
-                  score={score}
-                  totalQuestions={questions.length}
-                  userId={userId}
-                  onRestart={handleRestart}
-                />
-            </AnimatePresence>
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  );
-}
