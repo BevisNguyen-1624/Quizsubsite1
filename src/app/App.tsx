@@ -188,8 +188,7 @@ export default function App() {
                 "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
             }}
           />
-          <div className="p-6">
-            <div className="mb-6">
+          <div className="mb-6 flex justify-center">
               <motion.h1 className="flex items-center gap-2 text-2xl font-bold">
                 <svg
                   width="44"
@@ -219,32 +218,62 @@ export default function App() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -16 }}
                   transition={{ duration: 0.4 }}
-                  className="flex flex-col items-center text-center gap-4"
+                  className="flex flex-col items-center text-center gap-6"
                 >
-                  <div className="max-w-2xl text-left space-y-4">
-                    <p>
-                      Chào mừng bạn đến với minigame SĂN DẤU YODY 🔍 nằm trong
-                      khuôn khổ Hành trình Tuần lễ văn hoá - một hành trình nhỏ để
-                      cùng nhìn lại những dấu mốc đã làm nên YODY của hôm nay.
-                    </p>
-                    <p>Thể lệ tham gia:</p>
-                    <ul className="list-disc pl-5 text-left">
-                      <li>Mỗi nhân sự chỉ tham gia 01 lần duy nhất.</li>
-                      <li>
-                        Chọn đáp án bạn cho là chính xác nhất cho mỗi câu hỏi,
-                        tổng cộng có 20 câu hỏi.
-                      </li>
-                      <li>
-                        Nhân sự sẽ được ghi nhận là đã tham gia Ngày 2 sau khi
-                        hoàn thành game và bấm Gửi.
-                      </li>
-                      <li>
-                        Nhân sự trả lời đúng 20/20 câu sẽ được cộng ngay 50
-                        điểm Y-Point.
-                      </li>
-                    </ul>
-                    <p>
-                      💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại
+                  <div className="max-w-3xl space-y-6">
+                    <div className="space-y-4 text-left">
+                      <p className="text-lg leading-8 text-slate-700">
+                        Chào mừng bạn đến với minigame <strong>SĂN DẤU YODY</strong> 🔍
+                        nằm trong khuôn khổ Hành trình Tuần lễ văn hoá — một hành
+                        trình nhỏ để cùng nhìn lại những dấu mốc đã làm nên
+                        YODY của hôm nay.
+                      </p>
+                    </div>
+
+                    <div className="grid gap-4 rounded-3xl border border-slate-200 bg-slate-50/90 p-4 shadow-sm sm:grid-cols-[auto_1fr] sm:items-center">
+                      <div
+                        className="min-w-[80px] min-h-[80px] rounded-3xl flex items-center justify-center text-4xl"
+                        style={{
+                          background:
+                            "linear-gradient(135deg, #dbeafe, #ede9fe)",
+                          boxShadow: "0 8px 24px rgba(99,102,241,0.15)",
+                        }}
+                      >
+                        🧠
+                      </div>
+                      <div className="text-left">
+                        <p className="text-sm text-slate-500 uppercase tracking-[0.18em] mb-2">
+                          Cùng khám phá
+                        </p>
+                        <h2 className="text-2xl font-semibold text-slate-900">
+                          LỊCH SỬ CỦA YODY NHÉ!
+                        </h2>
+                      </div>
+                    </div>
+
+                    <div className="rounded-3xl border border-slate-200 bg-white/90 p-5 text-left shadow-sm">
+                      <p className="font-semibold text-slate-900 mb-3">
+                        Thể lệ tham gia:
+                      </p>
+                      <ul className="list-disc space-y-2 pl-5 text-slate-700 leading-7">
+                        <li>Mỗi nhân sự chỉ tham gia 01 lần duy nhất.</li>
+                        <li>
+                          Chọn đáp án bạn cho là chính xác nhất cho mỗi câu
+                          hỏi; tổng cộng có 20 câu hỏi.
+                        </li>
+                        <li>
+                          Nhân sự sẽ được ghi nhận là đã tham gia Ngày 2 sau khi
+                          hoàn thành game và bấm Gửi.
+                        </li>
+                        <li>
+                          Trả lời đúng 20/20 câu sẽ được cộng ngay 50 điểm
+                          Y-Point.
+                        </li>
+                      </ul>
+                    </div>
+
+                    <p className="text-sm leading-7 text-slate-600">
+                      💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại 
                       <a
                         href="https://dongthoigian.yody.io/"
                         className="text-blue-600 underline"
@@ -256,48 +285,11 @@ export default function App() {
                       – nơi tổng hợp những cột mốc đáng nhớ trong hành trình 12
                       năm nhé!
                     </p>
-                    <p>
-                      Bạn đã sẵn sàng chưa? Cùng bắt đầu hành trình “truy vết” và
-                      xem bạn hiểu YODY đến đâu nhé! 🍀
-                    </p>
-                  </div>
-                  <div
-                    className="min-w-[80px] min-h-[80px] rounded-xl flex items-center justify-center text-4xl"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #dbeafe, #ede9fe)",
-                      boxShadow:
-                        "0 8px 24px rgba(99,102,241,0.15)",
-                    }}
-                  >
-                    🧠
-                  </div>
-                  <div>
-                    <h2
-                      className="text-gray-800 mb-2"
-                      style={{
-                        fontSize: "1.25rem",
-                        fontWeight: 800,
-                      }}
-                    >
-                      CÙNG NHAU TÌM HIỂU VỀ <br />
-                      <span
-                        style={{
-                          background:
-                            "linear-gradient(135deg, #f59e0b, #fb923c)",
-                          WebkitBackgroundClip: "text",
-                          WebkitTextFillColor: "transparent",
-                          backgroundClip: "text",
-                        }}
-                      >
-                        LỊCH SỬ CỦA YODY NHÉ!
-                      </span>
-                    </h2>
                   </div>
 
                   <button
                     onClick={handleStart}
-                    className="w-full py-4 rounded-xl transition-all duration-200 hover:opacity-90 active:scale-[0.98] mt-1"
+                    className="w-full max-w-md py-4 rounded-xl transition-all duration-200 hover:opacity-90 active:scale-[0.98] mt-1"
                     style={{
                       background:
                         "linear-gradient(135deg, #f59e0b, #fb923c)",
