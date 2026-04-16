@@ -3,8 +3,9 @@ import { AnimatePresence, motion } from "motion/react";
 import { quizQuestions } from "./data/quizData";
 import { QuizQuestion } from "./components/QuizQuestion";
 import { QuizResults } from "./components/QuizResults";
+import { PersonalIdEntry } from "./components/PersonalIdEntry";
 
-type Phase = "intro" | "quiz" | "results";
+type Phase = "intro" | "id" | "quiz" | "results";
 
 function FloatingOrb({
   size,
@@ -45,11 +46,22 @@ export default function App() {
   const [phase, setPhase] = useState<Phase>("intro");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
+  const [questions, setQuestions] = useState(quizQuestions);
+  const [userId, setUserId] = useState("");
   const cardRef = useRef<HTMLDivElement>(null);
 
-  const currentQuestion = quizQuestions[currentIndex];
+  const currentQuestion = questions[currentIndex];
 
   const handleStart = () => {
+    setPhase("id");
+  };
+
+  const handleIdSubmit = (id: string) => {
+    setUserId(id);
+    const shuffled = [...quizQuestions].sort(
+      () => Math.random() - 0.5,
+    );
+    setQuestions(shuffled);
     setPhase("quiz");
     setCurrentIndex(0);
     setScore(0);
@@ -57,7 +69,7 @@ export default function App() {
 
   const handleNext = (isCorrect: boolean) => {
     const newScore = isCorrect ? score + 1 : score;
-    if (currentIndex + 1 >= quizQuestions.length) {
+    if (currentIndex + 1 >= questions.length) {
       setScore(newScore);
       setPhase("results");
     } else {
@@ -70,6 +82,7 @@ export default function App() {
     setPhase("intro");
     setCurrentIndex(0);
     setScore(0);
+    setUserId("");
   };
 
   return (
@@ -261,7 +274,7 @@ export default function App() {
                   backgroundClip: "text",
                 }}
               >
-                CHECK-UP: TƯ DUY HỆ THỐNG VHDN
+                CHECK-UP: TƯ DUY HỆ THỐNG VHD
               </motion.h1>
             </div>
 
@@ -337,13 +350,17 @@ export default function App() {
                 </motion.div>
               )}
 
+              {phase === "id" && (
+                <PersonalIdEntry onSubmit={handleIdSubmit} />
+              )}
+
               {phase === "quiz" && currentQuestion && (
                 <AnimatePresence mode="wait">
                   <QuizQuestion
                     key={currentQuestion.id}
                     question={currentQuestion}
                     questionNumber={currentIndex + 1}
-                    totalQuestions={quizQuestions.length}
+                    totalQuestions={questions.length}
                     onNext={handleNext}
                   />
                 </AnimatePresence>
@@ -353,7 +370,8 @@ export default function App() {
                 <QuizResults
                   key="results"
                   score={score}
-                  totalQuestions={quizQuestions.length}
+                  totalQuestions={questions.length}
+                  userId={userId}
                   onRestart={handleRestart}
                 />
               )}
