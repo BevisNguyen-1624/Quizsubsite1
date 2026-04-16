@@ -305,3 +305,36 @@ export default function App() {
                   </button>
                 </motion.div>
               )}
+
+              {phase === "id" && (
+                <PersonalIdEntry onSubmit={handleIdSubmit} />
+              )}
+
+              {phase === "quiz" && currentQuestion && (
+                <AnimatePresence mode="wait">
+                  <QuizQuestion
+                    key={currentQuestion.id}
+                    question={currentQuestion}
+                    questionNumber={currentIndex + 1}
+                    totalQuestions={questions.length}
+                    onNext={handleNext}
+                  />
+                </AnimatePresence>
+              )}
+
+              {phase === "results" && (
+                <QuizResults
+                  key="results"
+                  score={score}
+                  totalQuestions={questions.length}
+                  userId={userId}
+                  onRestart={handleRestart}
+                />
+              )}
+            </AnimatePresence>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
