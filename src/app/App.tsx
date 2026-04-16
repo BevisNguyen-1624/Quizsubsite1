@@ -186,27 +186,39 @@ export default function App() {
               background:
                 "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
             }}
-              >
-                <svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                > *SĂN DẤU YODY 
-              </motion.h1>
+              >// ...existing code...
 
-            {/* Divider */}
-            <div
-              className="w-full h-px mb-6"
-              style={{
-                background:
-                  "linear-gradient(90deg, transparent, #bfdbfe 40%, #c4b5fd 60%, transparent)",
-              }}
-            />
+<div
+  className="h-1.5 w-full"
+  style={{
+    background:
+      "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
+  }}
+>
+  <div>
+    <motion.h1 className="flex items-center gap-2">
+      <svg
+        width="44"
+        height="44"
+        viewBox="0 0 44 44"
+        fill="none"
+      />
+      **SĂN DẤU YODY
+    </motion.h1>
+  </div>
 
-            {/* Content Area */}
-            <AnimatePresence mode="wait">
-              {phase === "intro" && (
+  {/* Divider */}
+  <div
+    className="w-full h-px mb-6"
+    style={{
+      background:
+        "linear-gradient(90deg, transparent, #bfdbfe 40%, #c4b5fd 60%, transparent)",
+    }}
+  />
+
+  {/* Content Area */}
+  <AnimatePresence mode="wait">
+    {phase === "intro" && (
                 <motion.div
                   key="intro"
                   initial={{ opacity: 0, y: 16 }}
