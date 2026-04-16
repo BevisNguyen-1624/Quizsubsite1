@@ -156,7 +156,7 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative z-10 w-full mx-4"
-        style={{ maxWidth: "720px" }}
+        style={{ maxWidth: "900px" }}
       >
         {/* Glow ring behind card */}
         <div
@@ -188,7 +188,8 @@ export default function App() {
                 "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
             }}
           />
-          <div className="mb-6 flex justify-center">
+          <div className="p-6">
+            <div className="mb-6">
               <motion.h1 className="flex items-center gap-2 text-2xl font-bold">
                 <svg
                   width="44"
@@ -273,7 +274,7 @@ export default function App() {
                     </div>
 
                     <p className="text-sm leading-7 text-slate-600">
-                      💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại 
+                      💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại
                       <a
                         href="https://dongthoigian.yody.io/"
                         className="text-blue-600 underline"
@@ -308,20 +309,6 @@ export default function App() {
               {phase === "id" && (
                 <PersonalIdEntry onSubmit={handleIdSubmit} />
               )}
-
-              {phase === "quiz" && currentQuestion && (
-                <AnimatePresence mode="wait">
-                  <QuizQuestion
-                    key={currentQuestion.id}
-                    question={currentQuestion}
-                    questionNumber={currentIndex + 1}
-                    totalQuestions={questions.length}
-                    onNext={handleNext}
-                  />
-                </AnimatePresence>
-              )}
-
-              {phase === "results" && (
                 <QuizResults
                   key="results"
                   score={score}
@@ -332,6 +319,7 @@ export default function App() {
               )}
             </AnimatePresence>
           </div>
+        </div>
       </motion.div>
     </div>
   );
