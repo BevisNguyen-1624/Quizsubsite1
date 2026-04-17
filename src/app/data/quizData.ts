@@ -1,10 +1,14 @@
-export interface Question {
+import questionImage1 from "../../imports/image-5.jpeg";
+
+  
+ 
+ export interface Question {
   id: number;
   question: string;
   options: { key: string; text: string }[];
   correctAnswer: string;
   explanation: string;
-  imageUrl?: string;
+  image?: string;
 }
 
 export const quizQuestions: Question[] = [
@@ -13,7 +17,7 @@ export const quizQuestions: Question[] = [
     question: "YODY được thành lập vào ngày tháng năm nào?",
     options: [
       { key: "A", text: "25/04/2015" },
-      { key: "B", text: "24/5/2015" },
+      { key: "B", text: "24/05/2015" },
       { key: "C", text: "24/05/2014" },
       { key: "D", text: "25/04/2014" },
     ],
@@ -227,6 +231,7 @@ export const quizQuestions: Question[] = [
   {
     id: 19,
     question: "Đây là hình ảnh trong BST nào của YODY?",
+     image: questionImage1,
     options: [
       { key: "A", text: "Kết nối vạn vật" },
       { key: "B", text: "Kỷ nguyên mới" },
