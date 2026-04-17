@@ -95,8 +95,10 @@ export default function App() {
   };
 
   return (
-<div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center" 
-  style={{ backgroundImage: "url('https://drive.google.com/uc?export=view&id=1FHvBusQOYv_NPHHdbanVwA9VCJpNdgYa')"}}>
+<div 
+  className="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
+  style={{ backgroundImage: "url('https://raw.githubusercontent.com/BevisNguyen-1624/Quizsubsite1/main/BACK-NG%C3%80Y-2-S%C4%82N-D%E1%BA%A4U-YODY%20(1).jpg')" }}
+>
       {/* Main Card */}
       <motion.div
         ref={cardRef}
