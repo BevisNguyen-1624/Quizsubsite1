@@ -95,8 +95,8 @@ export default function App() {
   };
 
   return (
-<div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('C:\Users\Public\DocumentsBACK-NGÀY-2-SĂN-DẤU-YODY (1) (1).jpg')" }}>
-
+<div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center" 
+  style={{ backgroundImage: "url('https://drive.google.com/uc?export=view&id=1FHvBusQOYv_NPHHdbanVwA9VCJpNdgYa')"}}>
       {/* Main Card */}
       <motion.div
         ref={cardRef}
