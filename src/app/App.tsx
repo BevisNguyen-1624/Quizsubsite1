@@ -95,59 +95,7 @@ export default function App() {
   };
 
   return (
-    <div
-      className="min-h-screen w-full flex items-center justify-center relative overflow-hidden"
-      style={{
-        background:
-          "linear-gradient(145deg, #dbeafe 0%, #e0f2fe 35%, #ede9fe 70%, #dbeafe 100%)",
-      }}
-    >
-      {/* Decorative floating orbs */}
-      <FloatingOrb
-        size={320}
-        color="radial-gradient(circle, #93c5fd, #bfdbfe)"
-        style={{ top: "-80px", left: "-80px" }}
-      />
-      <FloatingOrb
-        size={280}
-        color="radial-gradient(circle, #c4b5fd, #ddd6fe)"
-        style={{ bottom: "-60px", right: "-60px" }}
-      />
-      <FloatingOrb
-        size={180}
-        color="radial-gradient(circle, #fde68a, #fef3c7)"
-        style={{ top: "30%", right: "5%" }}
-      />
-      <FloatingOrb
-        size={150}
-        color="radial-gradient(circle, #6ee7b7, #a7f3d0)"
-        style={{ bottom: "20%", left: "3%" }}
-      />
-
-      {/* Sparkle dots */}
-      {[
-        { top: "15%", left: "20%" },
-        { top: "70%", left: "15%" },
-        { top: "25%", right: "18%" },
-        { top: "80%", right: "22%" },
-        { top: "50%", left: "8%" },
-      ].map((pos, i) => (
-        <motion.div
-          key={i}
-          className="absolute w-2 h-2 rounded-full pointer-events-none"
-          style={{ background: "#93c5fd", ...pos }}
-          animate={{
-            scale: [1, 1.8, 1],
-            opacity: [0.4, 0.9, 0.4],
-          }}
-          transition={{
-            duration: 2 + i * 0.5,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: i * 0.6,
-          }}
-        />
-      ))}
+    <div className="min-h-screen bg-[C:\Users\Administrator\Downloads\BACK-NGÀY-2-SĂN-DẤU-YODY.jpg)] bg-cover bg-center">
 
       {/* Main Card */}
       <motion.div
@@ -231,19 +179,6 @@ export default function App() {
                       </p>
                     </div>
 
-                    <div className="grid gap-4 rounded-3xl border border-slate-200 bg-slate-50/90 p-4 shadow-sm sm:grid-cols-[auto_1fr] sm:items-center">
-                      <div
-                        className="min-w-[80px] min-h-[80px] rounded-3xl flex items-center justify-center text-4xl"
-                        style={{
-                          background:
-                            "linear-gradient(135deg, #dbeafe, #ede9fe)",
-                          boxShadow: "0 8px 24px rgba(99,102,241,0.15)",
-                        }}
-                      >
-                      </div>
-                      
-                    </div>
-
                     <div className="rounded-3xl border border-slate-200 bg-white/90 p-5 text-left shadow-sm">
                       <p className="font-semibold text-slate-900 mb-3">
                         Thể lệ tham gia:
@@ -264,24 +199,24 @@ export default function App() {
                         </li>
                       </ul>
                     </div>
-                    <div className="text-left">
+                    <div className="text-center">
                         <p className="text-sm text-slate-500 uppercase tracking-[0.18em] mb-2">
                           Cùng khám phá
                         </p>
-                        <h2 className="text-2xl font-semibold text-slate-900">
-                          LỊCH SỬ CỦA YODY NHÉ!
+                        <h2 className="text-2xl text-orange-600 font-semibold text-slate-900">
+                          LỊCH SỬ HÌNH THÀNH CỦA YODY NHÉ!
                         </h2>
                       </div>
 
                     <p className="text-sm leading-7 text-slate-600">
-                      💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại
+                      💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại {" "}
                       <a
                         href="https://dongthoigian.yody.io/"
                         className="text-blue-600 underline"
                         target="_blank"
                         rel="noreferrer"
                       >
-                         Landing page DÒNG THỜI GIAN YODY
+                        Landing page DÒNG THỜI GIAN YODY
                       </a>
                       – nơi tổng hợp những cột mốc đáng nhớ trong hành trình 12
                       năm nhé!
@@ -336,5 +271,6 @@ export default function App() {
         </div>
       </motion.div>
     </div>
+    
   );
 }

@@ -52,7 +52,7 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
           Nhập mã YD của bạn
         </h2>
         <p className="text-gray-400 text-sm leading-snug">
-          Mã YD sẽ hiển thị trên ảnh kết quả của bạn
+          Lưu ý: Chỉ cần nhập số, không cần "YD" ở đầu. Ví dụ: nếu mã của bạn là "YD12345", chỉ cần nhập "12345".
         </p>
       </div>
 
@@ -90,7 +90,7 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
               setError("");
             }}
             onKeyDown={(e) => e.key === "Enter" && handleSubmit()}
-            placeholder="nhập số của bạn…"
+            placeholder="nhập mã YD của bạn…"
             className="flex-1 px-4 py-3.5 outline-none bg-transparent text-gray-700 placeholder-gray-300"
             style={{ fontSize: "1rem", fontWeight: 600 }}
             autoFocus
@@ -143,7 +143,7 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
           boxShadow: "0 4px 20px rgba(245,158,11,0.4)",
         }}
       >
-        Bắt đầu quiz
+        Bắt đầu phá băng thôiii!!
         <ArrowRight className="w-4 h-4" />
       </button>
     </motion.div>
