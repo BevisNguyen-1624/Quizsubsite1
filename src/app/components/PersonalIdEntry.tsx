@@ -49,10 +49,10 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
           className="text-gray-800 mb-1"
           style={{ fontSize: "1.15rem", fontWeight: 800 }}
         >
-          Nhập mã tham gia của bạn
+          Nhập mã YD của bạn
         </h2>
         <p className="text-gray-400 text-sm leading-snug">
-          Mã học viên sẽ hiển thị trên ảnh kết quả của bạn
+          Mã YD sẽ hiển thị trên ảnh kết quả của bạn
         </p>
       </div>
 
