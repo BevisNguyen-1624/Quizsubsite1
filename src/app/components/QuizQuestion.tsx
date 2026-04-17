@@ -100,7 +100,15 @@ export function QuizQuestion({
 
       {/* Question */}
       <div className="mb-6">
-         {question.image && (
+        <h2
+          className="text-gray-800 leading-relaxed"
+          style={{ fontSize: "1.08rem", fontWeight: 700 }}
+        >
+          {question.question}
+        </h2>
+      </div>
+           {/* Question Image */}
+      {question.image && (
         <div className="mb-6">
           <img
             src={question.image}
@@ -112,13 +120,6 @@ export function QuizQuestion({
           />
         </div>
       )}
-        <h2
-          className="text-gray-800 leading-relaxed"
-          style={{ fontSize: "1.08rem", fontWeight: 700 }}
-        >
-          {question.question}
-        </h2>
-      </div>
 
       {/* Options */}
       <div className="flex flex-col gap-3 mb-5">
