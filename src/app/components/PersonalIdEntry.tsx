@@ -52,8 +52,6 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
           Nhập mã YD của bạn
         </h2>
         <p className="text-gray-400 text-sm leading-snug">
-          Lưu ý: Chỉ cần nhập số, không cần "YD" ở đầu.<br />
-         <i> Ví dụ: nếu mã của bạn là "YD12345", chỉ cần nhập "12345".</i>
         </p>
       </div>
 
@@ -77,7 +75,7 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
               setError("");
             }}
             onKeyDown={(e) => e.key === "Enter" && handleSubmit()}
-            placeholder="nhập mã YD của bạn…"
+            placeholder="Nhập mã YD của bạn…"
             className="flex-1 px-4 py-3.5 outline-none bg-transparent text-gray-700 placeholder-gray-300"
             style={{ fontSize: "1rem", fontWeight: 600 }}
             autoFocus
@@ -113,7 +111,7 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
             className="text-amber-600"
             style={{ fontWeight: 800, fontSize: "0.95rem" }}
           >
-            YD{idNumber.trim()}
+          {idNumber.trim()}
           </span>
         </motion.div>
       )}
