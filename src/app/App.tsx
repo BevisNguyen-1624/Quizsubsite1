@@ -138,14 +138,14 @@ export default function App() {
           />
           <div className="p-6">
             <div className="mb-6">
-              <motion.h1 className="flex items-center gap-2 text-2xl font-bold">
+              <motion.h1 className="flex items-center gap-2 text-2xl font-bold text-center">
                 <svg
                   width="44"
                   height="44"
                   viewBox="0 0 44 44"
                   fill="none"
                 />
-                SĂN DẤU YODY
+                HÀNH TRÌNH TUẦN LỄ VĂN HÓA: SĂN DẤU YODY
               </motion.h1>
             </div>
 
