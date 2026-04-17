@@ -261,9 +261,9 @@ export interface ScoreResult {
 export const scoreResults: ScoreResult[] = [
   {
     range: "0-19",
-    title: "Cảm ơn bạn đã tham gia Săn dấu YODY 🔍"
+    title: "CHÚT XÍU NỮA LÀ THÀNH "SIÊU THỢ SĂN" RỒI! 🕵️‍♂️",
     description:
-      'Có vẻ một vài “dấu vết” vẫn còn đang ẩn mình khá kỹ rồi! Đừng lo, mỗi câu hỏi là một mảnh ghép của hành trình 12 năm, và chúng ta hoàn toàn có thể khám phá lại bất cứ lúc nào tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/)". \nCảm ơn bạn đã tham gia và hẹn gặp lại ở những hoạt động tiếp theo trong Hành trình Tuần lễ văn hoá Tháng 4 nhé! \nYODY xin cảm ơn!',
+      'Cảm ơn bạn đã cùng YODY "ngược dòng thời gian". \nCó vài dấu ấn lịch sử đang chơi trốn tìm hơi kỹ một chút thôi. \nĐừng nản lòng nhé, hãy F5 lại tinh thần, quay lại "phục thù" và "hốt" trọn bộ dấu ấn ngay thôi nào!',
     buttonText: "Khám phá thêm về hành trình YODY tại đây",
     emoji: "🚀",
   },
