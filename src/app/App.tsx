@@ -96,7 +96,7 @@ export default function App() {
   };
 
   return (
-    <><div
+    <div
       className="min-h-screen w-full flex items-center justify-center relative overflow-hidden"
       style={{
         backgroundImage: `url("${bgImage}")`,
@@ -105,22 +105,16 @@ export default function App() {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}
-      {...} /><motion.div
-        ref={cardRef}
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="relative z-10 w-full mx-4"
-        style={{ maxWidth: "850px" }}
-      >
         {/* Glow ring behind card */}
         <div
           className="absolute inset-0 rounded-3xl pointer-events-none"
           style={{
-            background: "linear-gradient(135deg, rgba(147,197,253,0.6), rgba(196,181,253,0.4), rgba(253,230,138,0.3))",
+            background:
+              "linear-gradient(135deg, rgba(147,197,253,0.6), rgba(196,181,253,0.4), rgba(253,230,138,0.3))",
             filter: "blur(18px)",
             transform: "scale(1.03)",
-          }} />
+          }}
+        />
 
         <div
           className="relative rounded-3xl overflow-hidden"
@@ -128,7 +122,8 @@ export default function App() {
             background: "rgba(255,255,255,0.82)",
             backdropFilter: "blur(24px)",
             WebkitBackdropFilter: "blur(24px)",
-            boxShadow: "0 24px 64px rgba(99,102,241,0.12), 0 8px 24px rgba(59,130,246,0.1), inset 0 1px 0 rgba(255,255,255,0.9)",
+            boxShadow:
+              "0 24px 64px rgba(99,102,241,0.12), 0 8px 24px rgba(59,130,246,0.1), inset 0 1px 0 rgba(255,255,255,0.9)",
             border: "1.5px solid rgba(255,255,255,0.7)",
           }}
         >
@@ -136,8 +131,10 @@ export default function App() {
           <div
             className="h-1.5 w-full"
             style={{
-              background: "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
-            }} />
+              background:
+                "linear-gradient(90deg, #f59e0b, #fb923c, #60a5fa, #c4b5fd)",
+            }}
+          />
           <div className="p-6">
             <div className="mb-6">
               <motion.h1 className="text-2xl font-bold text-center w-full">
@@ -150,8 +147,10 @@ export default function App() {
             <div
               className="w-full h-px mb-6"
               style={{
-                background: "linear-gradient(90deg, transparent, #bfdbfe 40%, #c4b5fd 60%, transparent)",
-              }} />
+                background:
+                  "linear-gradient(90deg, transparent, #bfdbfe 40%, #c4b5fd 60%, transparent)",
+              }}
+            />
 
             {/* Content Area */}
             <AnimatePresence mode="wait">
@@ -190,13 +189,13 @@ export default function App() {
                       </ul>
                     </div>
                     <div className="text-center">
-                      <p className="text-sm text-slate-500 uppercase tracking-[0.18em] mb-2">
-                        Cùng khám phá
-                      </p>
-                      <h2 className="text-2xl text-orange-600 font-semibold text-slate-900">
-                        LỊCH SỬ HÌNH THÀNH CỦA YODY NHÉ!
-                      </h2>
-                    </div>
+                        <p className="text-sm text-slate-500 uppercase tracking-[0.18em] mb-2">
+                          Cùng khám phá
+                        </p>
+                        <h2 className="text-2xl text-orange-600 font-semibold text-slate-900">
+                          LỊCH SỬ HÌNH THÀNH CỦA YODY NHÉ!
+                        </h2>
+                      </div>
 
                   </div>
 
@@ -204,11 +203,13 @@ export default function App() {
                     onClick={handleStart}
                     className="w-full max-w-md py-4 rounded-xl transition-all duration-200 hover:opacity-90 active:scale-[0.98] mt-1"
                     style={{
-                      background: "linear-gradient(135deg, #f59e0b, #fb923c)",
+                      background:
+                        "linear-gradient(135deg, #f59e0b, #fb923c)",
                       color: "white",
                       fontWeight: 700,
                       fontSize: "1rem",
-                      boxShadow: "0 4px 20px rgba(245,158,11,0.4)",
+                      boxShadow:
+                        "0 4px 20px rgba(245,158,11,0.4)",
                     }}
                   >
                     Yes yes yesssss!!!!
@@ -227,7 +228,8 @@ export default function App() {
                     question={currentQuestion}
                     questionNumber={currentIndex + 1}
                     totalQuestions={questions.length}
-                    onNext={handleNext} />
+                    onNext={handleNext}
+                  />
                 </AnimatePresence>
               )}
 
@@ -237,12 +239,13 @@ export default function App() {
                   score={score}
                   totalQuestions={questions.length}
                   userId={userId}
-                  onRestart={handleRestart} />
+                  onRestart={handleRestart}
+                />
               )}
             </AnimatePresence>
           </div>
         </div>
-      </motion.div></>
+      </motion.div>
     </div>
   );
 }
