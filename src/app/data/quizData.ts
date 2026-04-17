@@ -50,6 +50,8 @@ export const quizQuestions: Question[] = [
     options: [
       { key: "A", text: "BST Mặc đẹp đón Tết 2015" },
       { key: "B", text: "BST Tết 2016" },
+      { key: "C", text: "BST Tết Sum Vầy" },
+      { key: "D", text: "BST Xuân Gắn Kết"}
     ],
     correctAnswer: "A",
     explanation: ""
@@ -68,7 +70,7 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 6,
-    question: "Văn phòng tháng hoa của YODY chính thức đi vào hoạt động từ năm nào?",
+    question: "Văn phòng thăng hoa của YODY chính thức đi vào hoạt động từ năm nào?",
     options: [
       { key: "A", text: "2013" },
       { key: "B", text: "2014" },
@@ -97,7 +99,7 @@ export const quizQuestions: Question[] = [
       { key: "A", text: "Chống thấm - Chống lạnh - Chống bụi" },
       { key: "B", text: "Cản gió - Cản nhiệt - Cản khuẩn" },
       { key: "C", text: "Cao cấp - Chất lượng - Co giãn" },
-      { key: "D", text: "Cản gió - Cản nước - Cản bụi" },
+      { key: "D", text: "Cản gió - Cản bụi - Chống thấm nước"}
     ],
     correctAnswer: "D",
     explanation: ""
@@ -116,7 +118,7 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 10,
-    question: "Cửa hàng YODY có diện tích lớn nhất và từng được công nhận là cửa hàng lớn nhất Đông Nam Á là cửa hàng nào?",
+    question: "Cửa hàng YODY có diện tích lớn nhất và từng được công nhận là cửa hàng lớn nhất Việt Nam là cửa hàng nào?",
     options: [
       { key: "A", text: "YODY Thái Bình 3" },
       { key: "B", text: "YODY Buôn Ma Thuột" },
@@ -154,10 +156,10 @@ export const quizQuestions: Question[] = [
     id: 13,
     question: "Đâu là đáp án đúng về tầm nhìn của YODY?",
     options: [
-      { key: "A", text: "Make everyone lookgood - feel good" },
+      { key: "A", text: "Make everyone look good - feel good"}
       { key: "B", text: "Tự do trong từng chuyển động" },
       { key: "C", text: "Everyday wear for everyone" },
-      { key: "D", text: "Lookgood - Feelgood" },
+      { key: "D", text: "Look good - Feel good" },
     ],
     correctAnswer: "C",
     explanation: ""
@@ -176,7 +178,7 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 15,
-    question: "YODY đã chính thức đổi màu thương hiệu từ Đen trắng - Xanh vàng vào năm bao nhiêu?",
+    question: "YODY đã chính thức đổi màu thương hiệu từ Đen trắng thành Xanh vàng vào năm bao nhiêu?",
     options: [
       { key: "A", text: "2018" },
       { key: "B", text: "2020" },
