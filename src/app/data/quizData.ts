@@ -274,7 +274,7 @@ export const scoreResults: ScoreResult[] = [
   },
   {
     range: "20",
-    title: "Chúc mừng bạn đã hoàn thành “Săn dấu YODY” với kết quả tuyệt đối! 🎉",
+    title: "CHÚC MỪNG BẠN ĐÃ HOÀN THÀNH 'SĂN DẤU YODY' VỚI KẾT QUẢ TUYỆT ĐỐI! 🏆",
     description: '<span style=\'display:block;text-align:center\'>Hy vọng những câu hỏi vừa rồi đã mang đến cho bạn thêm một góc nhìn thú vị về hành trình 12 năm của YODY.<br />Hẹn gặp bạn ở những hoạt động tiếp theo của Tuần lễ Văn hoá Tháng 4.<br />YODY xin cảm ơn.</span>',
     buttonText: "Khám phá thêm về hành trình YODY tại đây",
     emoji: "🏆",

@@ -349,7 +349,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // Trigger download
     const link = document.createElement("a");
-    link.download = `ket-qua-${userId || "YD"}-culturecode101.png`;
+    link.download = `ket-qua-${userId || "YD"}sandauyody.png`;
     link.href = canvas.toDataURL("image/png");
     link.click();
   };
