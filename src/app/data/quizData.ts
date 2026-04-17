@@ -1,4 +1,4 @@
-import questionImage1 from "../../imports/image-5.jpeg?url";
+import questionImage1 from "../imports/image-5.jpeg?url";
 
   
  
