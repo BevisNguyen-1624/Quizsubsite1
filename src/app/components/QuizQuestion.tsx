@@ -181,7 +181,7 @@ export function QuizQuestion({
                 >
                   {selectedAnswer === question.correctAnswer
                     ? "Chính xác!"
-                    : "Đáp án đúng:"}
+                    : "Chưa chính xác!"}
                 </span>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">

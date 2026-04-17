@@ -52,7 +52,8 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
           Nhập mã YD của bạn
         </h2>
         <p className="text-gray-400 text-sm leading-snug">
-          Lưu ý: Chỉ cần nhập số, không cần "YD" ở đầu. Ví dụ: nếu mã của bạn là "YD12345", chỉ cần nhập "12345".
+          Lưu ý: Chỉ cần nhập số, không cần "YD" ở đầu.<br />
+         <i> Ví dụ: nếu mã của bạn là "YD12345", chỉ cần nhập "12345".</i>
         </p>
       </div>
 
