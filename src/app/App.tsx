@@ -209,19 +209,6 @@ export default function App() {
                         </h2>
                       </div>
 
-                    <p className="text-sm leading-7 text-slate-600">
-                      💡 Tip nhỏ: Nếu cần “gợi ý”, bạn có thể tham khảo thêm tại {" "}
-                      <a
-                        href="https://dongthoigian.yody.io/"
-                        className="text-blue-600 underline"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Landing page DÒNG THỜI GIAN YODY
-                      </a>
-                      – nơi tổng hợp những cột mốc đáng nhớ trong hành trình 12
-                      năm nhé!
-                    </p>
                   </div>
 
                   <button
