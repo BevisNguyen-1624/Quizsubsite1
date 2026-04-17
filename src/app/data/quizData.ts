@@ -1,4 +1,4 @@
-import questionImage1 from "../../imports/image-5.jpeg";
+import questionImage1 from "../../imports/image-5.jpeg?url";
 
   
  
@@ -8,7 +8,7 @@ import questionImage1 from "../../imports/image-5.jpeg";
   options: { key: string; text: string }[];
   correctAnswer: string;
   explanation: string;
-  image?: string;
+  questionimg?: string;
 }
 
 export const quizQuestions: Question[] = [
@@ -231,7 +231,7 @@ export const quizQuestions: Question[] = [
   {
     id: 19,
     question: "Đây là hình ảnh trong BST nào của YODY?",
-    image: questionImage1,
+    questionimg: `url("${questionImage1}")`,
     options: [
       { key: "A", text: "Kết nối vạn vật" },
       { key: "B", text: "Kỷ nguyên mới" },
