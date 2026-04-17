@@ -5,7 +5,7 @@ import { QuizQuestion } from "./components/QuizQuestion";
 import { QuizResults } from "./components/QuizResults";
 import { PersonalIdEntry } from "./components/PersonalIdEntry";
 import type { CSSProperties } from "react";
-import bgImage from "C:/Users/Administrator/Bình - git/Quizsubsite1/src/imports/background111.jpg";
+import {bgImage} from "C:/Users/Administrator/Bình - git/Quizsubsite1/src/imports/background111.jpg";
 
 type Phase = "intro" | "id" | "quiz" | "results";
 
