@@ -105,6 +105,16 @@ export default function App() {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
       }}
+    >
+      {/* Main Card */}
+      <motion.div
+        ref={cardRef}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="relative z-10 w-full mx-4"
+        style={{ maxWidth: "850px"}}
+      >
         {/* Glow ring behind card */}
         <div
           className="absolute inset-0 rounded-3xl pointer-events-none"
