@@ -148,7 +148,7 @@ export default function App() {
                 >
                   {/* SVG content */}
                 </svg>
-                HÀNH TRÌNH TUẦN LỄ VĂN HÓA: SĂN DẤU YODY
+                HÀNH TRÌNH TUẦN LỄ VĂN HÓA<br>SĂN DẤU YODY</br>
               </motion.h1>
             </div>
 
