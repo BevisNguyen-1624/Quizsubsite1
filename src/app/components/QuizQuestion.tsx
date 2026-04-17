@@ -98,30 +98,28 @@ export function QuizQuestion({
         </div>
       </div>
 
-      {/* Question */}
-      <div className="mb-6">
-        <h2
-          className="text-gray-800 leading-relaxed"
-          style={{ fontSize: "1.08rem", fontWeight: 700 }}
-        >
-          {question.question}
-        </h2>
-      </div>
-           {/* Question Image */}
-      {question.image && (
-        <div className="mb-6">
-          <img
-            src={question.image}
-            alt="Question illustration"
-            className="w-full h-auto rounded-xl"
-            style={{
-              boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)",
-            }}
-          />
-        </div>
-      )}
+ {/* Question */}
+<div className="mb-6">
+  <h2 className="text-gray-800 leading-relaxed" style={{ fontSize: "1.08rem", fontWeight: 700 }}>
+    {question.question}
+  </h2>
+</div>
 
-      {/* Options */}
+{/* Question Image */}      
+{question.image && (
+  <div className="mb-6">
+    <img
+      src={question.image}
+      alt="Question illustration"
+      className="w-full h-auto rounded-xl"
+      style={{
+        boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)",
+      }}
+    />
+  </div>
+)}
+
+{/* Options */}
       <div className="flex flex-col gap-3 mb-5">
         {question.options.map((option) => (
           <motion.button
