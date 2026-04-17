@@ -262,14 +262,14 @@ export const scoreResults: ScoreResult[] = [
   {
     range: "0-19",
     title: "CHÚT XÍU NỮA LÀ THÀNH 'SIÊU THỢ SĂN' RỒI! 🕵️‍♂️",
-    description: 'Cảm ơn bạn đã cùng YODY <i>“ngược dòng thời gian”</i>.<br />Có vài dấu ấn lịch sử đang chơi trốn tìm hơi kỹ một chút thôi.<br />Đừng nản lòng nhé, hãy F5 lại tinh thần, quay lại <i>“phục thù”</i> và <i>“hốt”</i> trọn bộ dấu ấn ngay thôi nào!',
+    description: '<span style="display:block;text-align:center">Cảm ơn bạn đã cùng YODY <i>“ngược dòng thời gian”</i>.<br />Có vài dấu ấn lịch sử đang chơi trốn tìm hơi kỹ một chút thôi.<br />Đừng nản lòng nhé, hãy F5 lại tinh thần, quay lại <i>“phục thù”</i> và <i>“hốt”</i> trọn bộ dấu ấn ngay thôi nào!</span>',
     buttonText: "Khám phá thêm về hành trình YODY tại đây",
     emoji: "🚀",
   },
   {
     range: "20",
     title: "Chúc mừng bạn đã hoàn thành “Săn dấu YODY” với kết quả tuyệt đối! 🎉",
-    description: 'Hy vọng những câu hỏi vừa rồi đã mang đến cho bạn thêm một góc nhìn thú vị về hành trình 12 năm của YODY.<br />Hẹn gặp bạn ở những hoạt động tiếp theo của Tuần lễ Văn hoá Tháng 4.<br />YODY xin cảm ơn.',
+    description: '<span style="display:block;text-align:center">Hy vọng những câu hỏi vừa rồi đã mang đến cho bạn thêm một góc nhìn thú vị về hành trình 12 năm của YODY.<br />Hẹn gặp bạn ở những hoạt động tiếp theo của Tuần lễ Văn hoá Tháng 4.<br />YODY xin cảm ơn.</span>',
     buttonText: "Khám phá thêm về hành trình YODY tại đây",
     emoji: "🏆",
   },
