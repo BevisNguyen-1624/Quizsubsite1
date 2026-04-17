@@ -231,7 +231,7 @@ export const quizQuestions: Question[] = [
   {
     id: 19,
     question: "Đây là hình ảnh trong BST nào của YODY?",
-     image: questionImage1,
+     Image: `url("${questionImage1}")`,
     options: [
       { key: "A", text: "Kết nối vạn vật" },
       { key: "B", text: "Kỷ nguyên mới" },
