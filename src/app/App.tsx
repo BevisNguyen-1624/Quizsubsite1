@@ -174,9 +174,7 @@ export default function App() {
                     <div className="space-y-4 text-left">
                       <p className="text-lg leading-8 text-slate-700">
                         Chào mừng bạn đến với minigame <strong>SĂN DẤU YODY</strong> 🔍
-                        nằm trong khuôn khổ Hành trình Tuần lễ văn hoá — một hành
-                        trình nhỏ để cùng nhìn lại những dấu mốc đã làm nên
-                        YODY của hôm nay.
+                        nằm trong khuôn khổ Hành trình Tuần lễ văn hoá - một hoạt động để cùng nhìn lại những dấu mốc đã làm nên YODY của hôm nay.
                       </p>
                     </div>
 
@@ -185,10 +183,9 @@ export default function App() {
                         Thể lệ tham gia:
                       </p>
                       <ul className="list-disc space-y-2 pl-5 text-slate-700 leading-7">
-                        <li>Mỗi nhân sự chỉ tham gia 01 lần duy nhất.</li>
+
                         <li>
-                          Chọn đáp án bạn cho là chính xác nhất cho mỗi câu
-                          hỏi; tổng cộng có 20 câu hỏi.
+                          Chọn đáp án bạn cho là chính xác nhất cho mỗi câu hỏi, tổng cộng có 20 câu hỏi.
                         </li>
                         <li>
                           Nhân sự sẽ được ghi nhận là đã tham gia Ngày 2 sau khi
