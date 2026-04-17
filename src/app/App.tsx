@@ -105,7 +105,7 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative z-10 w-full mx-4"
-        style={{ maxWidth: "1000px"}}
+        style={{ maxWidth: "850px"}}
       >
         {/* Glow ring behind card */}
         <div

@@ -260,33 +260,24 @@ export interface ScoreResult {
 
 export const scoreResults: ScoreResult[] = [
   {
-    range: "0-16",
-    title: "Cảm ơn bạn đã tham gia hành trình SĂN DẤU YODY 🔍",
+    range: "0-19",
+    title: "Cảm ơn bạn đã tham gia Săn dấu YODY 🔍"
     description:
       'Có vẻ một vài “dấu vết” vẫn còn đang ẩn mình khá kỹ rồi! Đừng lo, mỗi câu hỏi là một mảnh ghép của hành trình 12 năm, và chúng ta hoàn toàn có thể khám phá lại bất cứ lúc nào tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/)". \nCảm ơn bạn đã tham gia và hẹn gặp lại ở những hoạt động tiếp theo trong Hành trình Tuần lễ văn hoá Tháng 4 nhé! \nYODY xin cảm ơn!',
-    buttonText: "Nâng tầm tư duy tại Culture Code 101",
+    buttonText: "Khám phá thêm về hành trình YODY tại đây",
     emoji: "🚀",
   },
   {
-    range: "17-19",
-    title: "Tư duy hệ thống của bạn rất ấn tượng!",
-    description:
-      'BWow, bạn đã đi rất xa trên hành trình SĂN DẤU YODY rồi 🔍Chỉ còn một chút nữa thôi là bạn đã có thể “phá đảo” toàn bộ dấu vết! Một vài chi tiết nhỏ có thể đã “đánh lừa” bạn, nhưng không sao, bạn có thể kiểm tra lại tất cả các cột mốc tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/).\nCảm ơn bạn đã tham gia và hẹn gặp lại ở những hoạt động tiếp theo trong Hành trình Tuần lễ văn hoá Tháng 4 nhé! \nYODY xin cảm ơn!',
-    buttonText: "Hoàn thiện hệ thống tại Culture Code 101",
-    emoji: "⭐",
-  },
-  {
     range: "20",
-    title: "Xuất sắc! Bạn là chuyên gia VHDN!",
+    title: "Chúc mừng bạn đã hoàn thành “Săn dấu YODY” với kết quả tuyệt đối! 🎉",
     description:
-      '🎉 XIN CHÚC MỪNG! \nBạn đã chính thức “phá tảng băng” thứ hai - minigame SĂN DẤU YODY! 🎉 Không chỉ là 20/20 điểm, mà còn là minh chứng cho việc bạn thực sự hiểu và đồng hành cùng hành trình của YODY qua từng cột mốc. Hành trình 12 năm vẫn còn rất nhiều câu chuyện thú vị đang chờ bạn khám phá thêm tại [Landing page DÒNG THỜI GIAN YODY](https://dongthoigian.yody.io/). Biết đâu bạn sẽ tìm thấy những “dấu ấn” mà mình chưa từng để ý trước đây 🔍 \nCảm ơn bạn đã tham gia và hẹn gặp lại ở những hoạt động tiếp theo trong Hành trình Tuần lễ văn hoá Tháng 4 nhé! \nYODY xin cảm ơn!!',
-    buttonText: "Đăng ký Culture Code 101 ngay",
+      '\nHy vọng những câu hỏi vừa rồi đã mang đến cho bạn thêm một góc nhìn thú vị về hành trình 12 năm của YODY. \nHẹn gặp bạn ở những hoạt động tiếp theo của Tuần lễ Văn hoá Tháng 4. \nYODY xin cảm ơn.
+    buttonText: "Khám phá thêm về hành trình YODY tại đây",
     emoji: "🏆",
   },
 ];
 
 export function getScoreResult(score: number): ScoreResult {
-  if (score <= 16) return scoreResults[0];
-  if (score <= 19) return scoreResults[1];
-  return scoreResults[2];
+  if (score <= 19) return scoreResults[0];
+  if (score = 20) return scoreResults[1];
 }
