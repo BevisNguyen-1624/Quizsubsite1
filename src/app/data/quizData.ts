@@ -156,7 +156,7 @@ export const quizQuestions: Question[] = [
     id: 13,
     question: "Đâu là đáp án đúng về tầm nhìn của YODY?",
     options: [
-      { key: "A", text: "Make everyone look good - feel good"}
+      { key: "A", text: "Make everyone look good - feel good"},
       { key: "B", text: "Tự do trong từng chuyển động" },
       { key: "C", text: "Everyday wear for everyone" },
       { key: "D", text: "Look good - Feel good" },
