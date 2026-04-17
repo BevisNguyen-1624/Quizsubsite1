@@ -185,15 +185,13 @@ export default function App() {
                       <ul className="list-disc space-y-2 pl-5 text-slate-700 leading-7">
 
                         <li>
-                          Chọn đáp án bạn cho là chính xác nhất cho mỗi câu hỏi, tổng cộng có 20 câu hỏi.
+                          Chọn đáp án bạn cho là chính xác nhất với mỗi câu hỏi, tổng cộng có 20 câu hỏi.
                         </li>
                         <li>
-                          Nhân sự sẽ được ghi nhận là đã tham gia Ngày 2 sau khi
-                          hoàn thành game và bấm Gửi.
+                          Nhân sự trả lời đúng 20/20 sẽ nhận 50 Y Point và được ghi nhận hoàn thành thử thách.
                         </li>
                         <li>
-                          Trả lời đúng 20/20 câu sẽ được cộng ngay 50 điểm
-                          Y-Point.
+                          Nhân sự có thể tham gia nhiều lần cho đến khi đạt điểm tối đa.
                         </li>
                       </ul>
                     </div>
