@@ -140,15 +140,8 @@ export default function App() {
           <div className="p-6">
             <div className="mb-6">
               <motion.h1 className="text-2xl font-bold text-center w-full">
-                <svg
-                  width="44"
-                  height="44"
-                  viewBox="0 0 44 44"
-                  fill="none"
-                >
-                  {/* SVG content */}
-                </svg>
-                HÀNH TRÌNH TUẦN LỄ VĂN HÓA<br>SĂN DẤU YODY</br>
+                HÀNH TRÌNH TUẦN LỄ VĂN HÓA<br />
+                SĂN DẤU YODY
               </motion.h1>
             </div>
 
