@@ -68,20 +68,6 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
             transition: "border-color 0.2s",
           }}
         >
-          {/* Fixed "YD" prefix */}
-          <div
-            className="flex items-center justify-center px-4 select-none shrink-0"
-            style={{
-              background: "linear-gradient(135deg, #f59e0b, #fb923c)",
-              color: "white",
-              fontWeight: 800,
-              fontSize: "1.05rem",
-              minWidth: "60px",
-            }}
-          >
-            YD
-          </div>
-
           {/* Number input */}
           <input
             type="text"
