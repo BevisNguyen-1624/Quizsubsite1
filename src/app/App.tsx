@@ -95,7 +95,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[C:\Users\Administrator\Downloads\BACK-NGÀY-2-SĂN-DẤU-YODY.jpg)] bg-cover bg-center">
+    <div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "https://drive.google.com/file/d/1Rk2daSMI4rlFSaW2j9Nn9K-eXsGRuFXa/view?usp=sharing"}}>
+      <div className="bg-white rounded-3xl shadow-lg p-8 w-full max-w-2xl">
 
       {/* Main Card */}
       <motion.div
@@ -104,7 +105,7 @@ export default function App() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative z-10 w-full mx-4"
-        style={{ maxWidth: "900px" }}
+        style={{ maxWidth: "1000px"}}
       >
         {/* Glow ring behind card */}
         <div
@@ -271,6 +272,6 @@ export default function App() {
         </div>
       </motion.div>
     </div>
-    
+    </div>
   );
 }
