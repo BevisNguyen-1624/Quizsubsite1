@@ -219,7 +219,7 @@ export default function App() {
                         "0 4px 20px rgba(245,158,11,0.4)",
                     }}
                   >
-                    Bắt đầu phá băng thôiiii! 🚀
+                    Yes yes yesssss!!!!
                   </button>
                 </motion.div>
               )}
