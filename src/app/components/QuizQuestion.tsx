@@ -100,6 +100,16 @@ export function QuizQuestion({
 
       {/* Question */}
       <div className="mb-6">
+        {question.image && (
+          <div className="flex justify-center my-4">
+            <img
+              src={question.image}
+              alt="question"
+              className="max-h-56 rounded-xl object-contain"
+              style={{ background: "#fff" }}
+            />
+          </div>
+        )}
         <h2
           className="text-gray-800 leading-relaxed"
           style={{ fontSize: "1.08rem", fontWeight: 700 }}
