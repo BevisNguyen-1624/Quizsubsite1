@@ -1,5 +1,5 @@
-import questionImage1 from "../../imports/image-5.jpeg";
-
+import questionImage1 from "../../imports/image-6.jpeg";
+import questionImage2 from "../../imports/image-5.jpeg";
   
  
  export interface Question {
@@ -51,6 +51,7 @@ export const quizQuestions: Question[] = [
   {
     id: 4,
     question: "Đây là hình ảnh trong bộ sưu tập nào của YODY?",
+    image: questionImage2,
     options: [
       { key: "A", text: "BST Mặc đẹp đón Tết 2015" },
       { key: "B", text: "BST Tết 2016" },
