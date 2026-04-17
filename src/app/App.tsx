@@ -145,8 +145,10 @@ export default function App() {
                   height="44"
                   viewBox="0 0 44 44"
                   fill="none"
-                />
-                HÀNH TRÌNH TUẦN LỄ VĂN HÓA<br> SĂN DẤU YODY
+                >
+                  {/* SVG content */}
+                </svg>
+                HÀNH TRÌNH TUẦN LỄ VĂN HÓA: SĂN DẤU YODY
               </motion.h1>
             </div>
 
