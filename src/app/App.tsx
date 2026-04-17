@@ -95,7 +95,7 @@ export default function App() {
   };
 
   return (
-<div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('https://drive.google.com/file/d/1Rk2daSMI4rlFSaW2j9Nn9K-eXsGRuFXa/view?usp=sharing')"}}>
+<div className="min-h-screen w-full flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('C:\Users\Public\DocumentsBACK-NGÀY-2-SĂN-DẤU-YODY (1) (1).jpg')" }}>
 
       {/* Main Card */}
       <motion.div
