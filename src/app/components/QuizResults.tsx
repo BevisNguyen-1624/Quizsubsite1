@@ -173,7 +173,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     bGrad.addColorStop(1, "#ede9fe");
     ctx.fillStyle = bGrad;
     ctx.fill();
-    ctx.font = "600 12.5px be-vietnam Pro";
+    ctx.font = "600 12.5px sans-serif";
     ctx.fillStyle = "#6366f1";
     ctx.fillText("KẾT QUẢ HÀNH TRÌNH SĂN DẤU YODY", CX, cy + 24);
     cy += 56;
@@ -232,10 +232,10 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.lineCap = "round";
     ctx.stroke();
     // Score text
-    ctx.font = "700 50px be-vietnam Pro";
+    ctx.font = "700 50px sans-serif";
     ctx.fillStyle = scoreCol;
     ctx.fillText(String(score), CX, circleCY + 22);
-    ctx.font = "600 20px be-vietnam Pro";
+    ctx.font = "600 20px sans-serif";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText(`/${totalQuestions}`, CX, circleCY + 48);
     cy = circleCY + CR + 30;
@@ -284,7 +284,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
       .replace(/\*\*(.*?)\*\*/g, "$1")
       .replace(/"([^"]+)"/g, "\u201c$1\u201d");
     ctx.save();
-    const descFont = "400 16.5px Arial";
+    const descFont = "400 16.5px sans-serif";
     const descLines = wrapLines(rawDesc, 520, descFont);
     ctx.font = descFont;
     ctx.fillStyle = "#475569";
