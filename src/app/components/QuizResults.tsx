@@ -218,5 +218,4 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
         Làm lại bài kiểm tra
       </motion.button>
     </motion.div>
-  );
 }
