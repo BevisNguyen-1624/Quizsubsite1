@@ -157,7 +157,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     const brandGrad = ctx.createLinearGradient(CX - 55, 0, CX + 55, 0);
     brandGrad.addColorStop(0, "#f59e0b");
     brandGrad.addColorStop(1, "#fb923c");
-    ctx.font = "900 42px be-vietnam Pro";
+    ctx.font = "900 35px be-vietnam Pro";
     ctx.fillStyle = brandGrad;
     ctx.fillText("SĂN DẤU YODY", CX, cy);
     cy += 18;
@@ -181,10 +181,10 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // User ID
     ctx.save();
-    ctx.font = "500 12px be-vietnam Pro";
+    ctx.font = "500 30px be-vietnam Pro";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText("YODYer", CX, cy);
-    cy += 26;
+    cy += 15;
 
     const idGrad = ctx.createLinearGradient(CX - 90, 0, CX + 90, 0);
     idGrad.addColorStop(0, "#f59e0b");
@@ -235,7 +235,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.font = "900 62px Arial";
     ctx.fillStyle = scoreCol;
     ctx.fillText(String(score), CX, circleCY + 22);
-    ctx.font = "600 20px Arial";
+    ctx.font = "600 20px be-vietnam Pro";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText(`/${totalQuestions}`, CX, circleCY + 48);
     cy = circleCY + CR + 30;
