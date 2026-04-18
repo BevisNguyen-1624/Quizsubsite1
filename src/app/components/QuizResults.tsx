@@ -149,18 +149,18 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // Brand header
     ctx.save();
-    ctx.font = "900 11px be-vietnam Pro";
+    ctx.font = "900 11px sans-serif";
     ctx.fillStyle = "#df982e";
     ctx.fillText("HÀNH TRÌNH TUẦN LỄ VĂN HÓA", CX, cy);
-    cy += 30;
+    cy += 36;
 
     const brandGrad = ctx.createLinearGradient(CX - 55, 0, CX + 55, 0);
     brandGrad.addColorStop(0, "#f59e0b");
     brandGrad.addColorStop(1, "#fb923c");
-    ctx.font = "900 35px be-vietnam Pro";
+    ctx.font = "900 35px sans-serif";
     ctx.fillStyle = brandGrad;
     ctx.fillText("SĂN DẤU YODY", CX, cy);
-    cy += 18;
+    cy += 28;
 
     // "KẾT QUẢ KIỂM TRA" badge
     ctx.save();
@@ -181,18 +181,18 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // User ID
     ctx.save();
-    ctx.font = "500 30px be-vietnam Pro";
+    ctx.font = "500 30px sans-serif";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText("YODYer", CX, cy);
-    cy += 15;
+    cy += 24;
 
     const idGrad = ctx.createLinearGradient(CX - 90, 0, CX + 90, 0);
     idGrad.addColorStop(0, "#f59e0b");
     idGrad.addColorStop(1, "#fb923c");
-    ctx.font = "900 46px be-vietnam Pro";
+    ctx.font = "900 46px sans-serif";
     ctx.fillStyle = idGrad;
-    ctx.fillText(userId || "YD---", CX, cy + 36);
-    cy += 60;
+    ctx.fillText(userId || "YD---", CX, cy + 42);
+    cy += 72;
     ctx.restore();
 
     // Divider 1
@@ -232,7 +232,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.lineCap = "round";
     ctx.stroke();
     // Score text
-    ctx.font = "900 62px Arial";
+    ctx.font = "700 50px be-vietnam Pro";
     ctx.fillStyle = scoreCol;
     ctx.fillText(String(score), CX, circleCY + 22);
     ctx.font = "600 20px be-vietnam Pro";
@@ -243,22 +243,22 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // Emoji
     ctx.save();
-    ctx.font = "52px Arial";
-    ctx.fillText(result.emoji, CX, cy + 46);
-    cy += 62;
+    ctx.font = "52px sans-serif";
+    ctx.fillText(result.emoji, CX, cy + 50);
+    cy += 72;
     ctx.restore();
 
     // Title
     ctx.save();
-    const titleFont = "800 24px Arial";
+    const titleFont = "800 24px sans-serif";
     const titleLines = wrapLines(result.title, 520, titleFont);
     ctx.font = titleFont;
     ctx.fillStyle = "#1e293b";
     for (const line of titleLines) {
       ctx.fillText(line, CX, cy);
-      cy += 34;
+      cy += 40;
     }
-    cy += 6;
+    cy += 16;
     ctx.restore();
 
     // Divider 2
@@ -312,7 +312,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     bnGrad.addColorStop(1, "#fb923c");
     ctx.fillStyle = bnGrad;
     ctx.fill();
-    ctx.font = "900 16px Be-vietnam Pro";
+    ctx.font = "900 16px sans-serif";
     ctx.fillStyle = "white";
     ctx.fillText("🎉  " + result.buttonText, CX, cy + 44);
     cy += BNH + 16;
@@ -331,10 +331,10 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.moveTo(120, footY);
     ctx.lineTo(600, footY);
     ctx.stroke();
-    ctx.font = "600 15px be-vietnam Pro";
+    ctx.font = "600 15px sans-serif";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText("Chúc mừng sinh nhật YODY tuổi 12!!", CX, footY + 30);
-    ctx.font = "400 12px Be-vietnam Pro";
+    ctx.font = "400 12px sans-serif";
     ctx.fillStyle = "#cbd5e1";
     ctx.fillText(new Date().toLocaleDateString("vi-VN"), CX, footY + 52);
     ctx.restore();
