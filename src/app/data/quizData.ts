@@ -283,5 +283,6 @@ export const scoreResults: ScoreResult[] = [
 
 export function getScoreResult(score: number): ScoreResult {
   if (score <= 19) return scoreResults[0];
-  if (score = 20) return scoreResults[1];
+  if (score === 20) return scoreResults[1];
+  return scoreResults[0];
 }

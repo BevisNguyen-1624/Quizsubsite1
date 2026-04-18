@@ -149,28 +149,18 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // Brand header
     ctx.save();
-    ctx.font = "700 11px Arial";
-    ctx.fillStyle = "#94a3b8";
-    ctx.fillText("C U L T U R E   C O D E", CX, cy);
+    ctx.font = "900 11px be-vietnam Pro";
+    ctx.fillStyle = "#df982e";
+    ctx.fillText("HÀNH TRÌNH TUẦN LỄ VĂN HÓA", CX, cy);
     cy += 30;
 
     const brandGrad = ctx.createLinearGradient(CX - 55, 0, CX + 55, 0);
     brandGrad.addColorStop(0, "#f59e0b");
     brandGrad.addColorStop(1, "#fb923c");
-    ctx.font = "900 42px Arial";
+    ctx.font = "900 42px be-vietnam Pro";
     ctx.fillStyle = brandGrad;
-    ctx.fillText("101", CX, cy);
+    ctx.fillText("SĂN DẤU YODY", CX, cy);
     cy += 18;
-
-    // Three decorative dots
-    ctx.fillStyle = "#f59e0b";
-    [-48, 0, 48].forEach((dx) => {
-      ctx.beginPath();
-      ctx.arc(CX + dx, cy + 2, 3, 0, Math.PI * 2);
-      ctx.fill();
-    });
-    cy += 22;
-    ctx.restore();
 
     // "KẾT QUẢ KIỂM TRA" badge
     ctx.save();
@@ -183,23 +173,23 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     bGrad.addColorStop(1, "#ede9fe");
     ctx.fillStyle = bGrad;
     ctx.fill();
-    ctx.font = "600 12.5px Arial";
+    ctx.font = "600 12.5px be-vietnam Pro";
     ctx.fillStyle = "#6366f1";
-    ctx.fillText("KẾT QUẢ KIỂM TRA VĂN HÓA DOANH NGHIỆP", CX, cy + 24);
+    ctx.fillText("KẾT QUẢ HÀNH TRÌNH SĂN DẤU YODY", CX, cy + 24);
     cy += 56;
     ctx.restore();
 
     // User ID
     ctx.save();
-    ctx.font = "500 12px Arial";
+    ctx.font = "500 12px be-vietnam Pro";
     ctx.fillStyle = "#94a3b8";
-    ctx.fillText("H Ọ C   V I Ê N", CX, cy);
+    ctx.fillText("YODYer", CX, cy);
     cy += 26;
 
     const idGrad = ctx.createLinearGradient(CX - 90, 0, CX + 90, 0);
     idGrad.addColorStop(0, "#f59e0b");
     idGrad.addColorStop(1, "#fb923c");
-    ctx.font = "900 46px Arial";
+    ctx.font = "900 46px be-vietnam Pro";
     ctx.fillStyle = idGrad;
     ctx.fillText(userId || "YD---", CX, cy + 36);
     cy += 60;
@@ -288,6 +278,8 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // Description (first paragraph, max 5 lines)
     const rawDesc = result.description
+      .replace(/<br\s*\/?>/gi, "\n")
+      .replace(/<[^>]+>/g, "")
       .split("\n\n")[0]
       .replace(/\*\*(.*?)\*\*/g, "$1")
       .replace(/"([^"]+)"/g, "\u201c$1\u201d");
@@ -320,7 +312,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     bnGrad.addColorStop(1, "#fb923c");
     ctx.fillStyle = bnGrad;
     ctx.fill();
-    ctx.font = "700 16px Arial";
+    ctx.font = "900 16px Be-vietnam Pro";
     ctx.fillStyle = "white";
     ctx.fillText("🎉  " + result.buttonText, CX, cy + 44);
     cy += BNH + 16;
@@ -339,10 +331,10 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.moveTo(120, footY);
     ctx.lineTo(600, footY);
     ctx.stroke();
-    ctx.font = "600 15px Arial";
+    ctx.font = "600 15px be-vietnam Pro";
     ctx.fillStyle = "#94a3b8";
-    ctx.fillText("culturecode101.com", CX, footY + 30);
-    ctx.font = "400 12px Arial";
+    ctx.fillText("Chúc mừng sinh nhật YODY tuổi 12!!", CX, footY + 30);
+    ctx.font = "400 12px Be-vietnam Pro";
     ctx.fillStyle = "#cbd5e1";
     ctx.fillText(new Date().toLocaleDateString("vi-VN"), CX, footY + 52);
     ctx.restore();
