@@ -532,14 +532,16 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
         className="w-full mb-3"
       >
         <a
-          href="/"
+          href="https://dongthoigian.yody.io"
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-full py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-200 hover:opacity-90 active:scale-[0.98]"
           style={{
             background: "linear-gradient(135deg, #f59e0b, #fb923c)",
             color: "white",
             fontWeight: 700,
             fontSize: "1rem",
-            boxShadow: "0 4px 20px rgba(245, 158, 11, 0.4)",
+            boxShadow: "0 4px 20px rgba(245, s158, 11, 0.4)",
             display: "flex",
             textDecoration: "none",
           }}
