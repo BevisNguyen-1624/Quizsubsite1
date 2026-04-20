@@ -123,11 +123,11 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
       .replace(/\*\*(.*?)\*\*/g, "$1")
       .replace(/"([^"]+)"/g, "\u201c$1\u201d");
 
-    const descFont = "400 17px be-vietnam pro";
+    const descFont = "400 17px Montserrat";
     const descLines = wrapLines(rawDesc, 530, descFont);
     const showN = Math.min(descLines.length, 5);
 
-    const titleFont = "800 26px be-vietnam pro";
+    const titleFont = "800 26px Montserrat";
     const titleLines = wrapLines(result.title, 310, titleFont);
 
     // Calculate dynamic CARD_H
@@ -189,7 +189,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // Brand tag
     ctx.save();
-    ctx.font = "700 11px be-vietnam pro";
+    ctx.font = "700 11px Montserrat";
     ctx.fillStyle = "#d97706";
     ctx.letterSpacing = "2px";
     ctx.fillText("HÀNH TRÌNH TUẦN LỄ VĂN HÓA", CX, cy);
@@ -199,7 +199,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     const brandGrad = ctx.createLinearGradient(CX - 160, 0, CX + 160, 0);
     brandGrad.addColorStop(0, "#f59e0b");
     brandGrad.addColorStop(1, "#fb923c");
-    ctx.font = "700 30px be-vietnam pro";
+    ctx.font = "700 30px Montserrat";
     ctx.fillStyle = brandGrad;
     ctx.fillText("SĂN DẤU YODY", CX, cy);
     cy += 18;
@@ -216,7 +216,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     bGrad.addColorStop(1, "#ede9fe");
     ctx.fillStyle = bGrad;
     ctx.fill();
-    ctx.font = "700 12px be-vietnam pro";
+    ctx.font = "700 12px Montserrat";
     ctx.fillStyle = "#6366f1";
     ctx.fillText("KẾT QUẢ HÀNH TRÌNH SĂN DẤU YODY", CX, cy + 25);
     cy += 56;
@@ -224,7 +224,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // User label + ID
     ctx.save();
-    ctx.font = "500 20px be-vietnam pro";
+    ctx.font = "500 20px Montserrat";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText("YODYer", CX, cy);
     cy += 14;
@@ -232,7 +232,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     const idGrad = ctx.createLinearGradient(CX - 120, 0, CX + 120, 0);
     idGrad.addColorStop(0, "#f59e0b");
     idGrad.addColorStop(1, "#fb923c");
-    ctx.font = "900 50px be-vietnam pro";
+    ctx.font = "900 50px Montserrat";
     ctx.fillStyle = idGrad;
     ctx.fillText(userId || "YD---", CX, cy + 48);
     cy += 72;
@@ -278,12 +278,12 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // Score number
     ctx.textAlign = "center";
-    ctx.font = `700 54px be-vietnam pro`;
+    ctx.font = `700 54px Montserrat`;
     ctx.fillStyle = scoreCol;
     ctx.fillText(String(score), CIRCLE_CX, CIRCLE_CY + 22);
 
     // Total
-    ctx.font = "600 22px be-vietnam pro";
+    ctx.font = "600 22px Montserrat";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText(`/${totalQuestions}`, CIRCLE_CX, CIRCLE_CY + 52);
     ctx.restore();
@@ -297,12 +297,12 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.textAlign = "center";
 
     // "Điểm số của bạn" label
-    ctx.font = "600 13px be-vietnam pro";
+    ctx.font = "600 13px Montserrat";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText("ĐIỂM SỐ CỦA BẠN", RIGHT_CX, ROW_TOP + 24);
 
     // Emoji
-    ctx.font = "44px be-vietnam pro";
+    ctx.font = "44px Montserrat";
     ctx.fillText(result.emoji, RIGHT_CX, ROW_TOP + 78);
 
     // Result title (wrapped)
@@ -383,7 +383,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     bnGrad.addColorStop(1, "#fb923c");
     ctx.fillStyle = bnGrad;
     ctx.fill();
-    ctx.font = "800 17px sans-serif";
+    ctx.font = "800 17px Montserrat";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
     ctx.fillText("🎉  " + result.buttonText, CX, cy + 46);
@@ -404,13 +404,13 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.stroke();
     cy += 28;
 
-    ctx.font = "600 15px be-vietnam pro";
+    ctx.font = "600 15px Montserrat";
     ctx.fillStyle = "#94a3b8";
     ctx.textAlign = "center";
     ctx.fillText("Chúc mừng sinh nhật YODY tuổi 12!! 🎂", CX, cy);
     cy += 24;
 
-    ctx.font = "400 12px be-vietnam pro";
+    ctx.font = "400 12px Montserrat";
     ctx.fillStyle = "#cbd5e1";
     ctx.fillText(new Date().toLocaleDateString("vi-VN"), CX, cy);
     ctx.restore();

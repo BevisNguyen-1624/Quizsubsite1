@@ -111,7 +111,7 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 9,
-    question: "Đâu không phải là 1 trong số những chiến dịch của YODY từ trước tới nay?",
+    question: "Đâu KHÔNG PHẢI là 1 trong số những chiến dịch của YODY từ trước tới nay?",
     options: [
       { key: "A", text: "Bán hàng toàn dân" },
       { key: "B", text: "Sản phẩm chất lượng cao, dịch vụ 5 sao, giá bình dân" },
@@ -207,7 +207,7 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 17,
-    question: "Đâu không phải là KOL từng kết hợp cùng các BST của YODY?",
+    question: "Đâu KHÔNG PHẢI là KOL từng kết hợp cùng các BST của YODY?",
     options: [
       { key: "A", text: "Diễn viên Hồng Đăng - Hồng Diễm" },
       { key: "B", text: "Cầu thủ Văn Toàn" },
