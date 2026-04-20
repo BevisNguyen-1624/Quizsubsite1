@@ -296,22 +296,13 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.save();
     ctx.textAlign = "center";
 
-    // "Điểm số của bạn" label
-    ctx.font = "600 13px Montserrat";
-    ctx.fillStyle = "#94a3b8";
-    ctx.fillText("ĐIỂM SỐ CỦA BẠN", RIGHT_CX, ROW_TOP + 24);
-
-    // Emoji
-    ctx.font = "44px Montserrat";
-    ctx.fillText(result.emoji, RIGHT_CX, ROW_TOP + 78);
-
     // Result title (wrapped)
     ctx.font = titleFont;
     ctx.fillStyle = "#1e293b";
     let titleCY = ROW_TOP + 110;
     for (const line of wrapLines(result.title, RIGHT_MAX_W - 16, titleFont)) {
       ctx.fillText(line, RIGHT_CX, titleCY);
-      titleCY += 38;
+      titleCY += 50;
     }
     ctx.restore();
 
