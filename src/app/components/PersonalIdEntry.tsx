@@ -12,7 +12,7 @@ export function PersonalIdEntry({ onSubmit }: PersonalIdEntryProps) {
 
   const handleSubmit = () => {
     if (!idNumber.trim()) {
-      setError("Vui lòng nhập số ID của bạn");
+      setError("Vui lòng nhập mã YD của bạn");
       return;
     }
     onSubmit(`${idNumber.trim()}`);
