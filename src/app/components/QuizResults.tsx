@@ -280,12 +280,12 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.textAlign = "center";
     ctx.font = `700 54px Montserrat`;
     ctx.fillStyle = scoreCol;
-    ctx.fillText(String(score), CIRCLE_CX, CIRCLE_CY + 22);
+    ctx.fillText(String(score), CIRCLE_CX, CIRCLE_CY + 15);
 
     // Total
     ctx.font = "600 22px Montserrat";
     ctx.fillStyle = "#94a3b8";
-    ctx.fillText(`/${totalQuestions}`, CIRCLE_CX, CIRCLE_CY + 52);
+    ctx.fillText(`/${totalQuestions}`, CIRCLE_CX, CIRCLE_CY + 40);
     ctx.restore();
 
     // Right side: score label + emoji + title
@@ -299,7 +299,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     // Result title (wrapped)
     ctx.font = titleFont;
     ctx.fillStyle = "#1e293b";
-    let titleCY = ROW_TOP + 50;
+    let titleCY = ROW_TOP + 70;
     for (const line of wrapLines(result.title, RIGHT_MAX_W - 16, titleFont)) {
       ctx.fillText(line, RIGHT_CX, titleCY);
       titleCY += 38;
