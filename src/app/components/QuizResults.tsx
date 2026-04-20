@@ -189,11 +189,11 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // Brand tag
     ctx.save();
-    ctx.font = "700 11px Montserrat";
-    ctx.fillStyle = "#d97706";
+    ctx.font = "700 13px Montserrat";
+    ctx.fillStyle = "#328bb4";
     ctx.letterSpacing = "2px";
     ctx.fillText("HÀNH TRÌNH TUẦN LỄ VĂN HÓA", CX, cy);
-    cy += 36;
+    cy += 50;
 
     // Brand title gradient
     const brandGrad = ctx.createLinearGradient(CX - 160, 0, CX + 160, 0);
