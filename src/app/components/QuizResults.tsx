@@ -202,7 +202,7 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     ctx.font = "700 30px Montserrat";
     ctx.fillStyle = brandGrad;
     ctx.fillText("SĂN DẤU YODY", CX, cy);
-    cy += 18;
+    cy += 30;
     ctx.restore();
 
     // Badge pill
@@ -224,15 +224,15 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
 
     // User label + ID
     ctx.save();
-    ctx.font = "500 20px Montserrat";
+    ctx.font = "500 15px Montserrat";
     ctx.fillStyle = "#94a3b8";
     ctx.fillText("YODYer", CX, cy);
-    cy += 14;
+    cy += 25;
 
     const idGrad = ctx.createLinearGradient(CX - 120, 0, CX + 120, 0);
     idGrad.addColorStop(0, "#f59e0b");
     idGrad.addColorStop(1, "#fb923c");
-    ctx.font = "900 50px Montserrat";
+    ctx.font = "900 30px Montserrat";
     ctx.fillStyle = idGrad;
     ctx.fillText(userId || "YD---", CX, cy + 48);
     cy += 72;
