@@ -26,7 +26,7 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 2,
-    question: "YODY ra mắt sự kiện Fashion Show đầu tiên vào năm nào?",
+    question: "Fashion Show đầu tiên mang tên thương hiệu YODY được tổ chức vào năm nào?",
     options: [
       { key: "A", text: "2013" },
       { key: "B", text: "2014" },
@@ -147,12 +147,12 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 12,
-    question: "Trong năm 2025, YODY đã bán được bao nhiêu sản phẩm áo Polo?",
+    question: "Trong năm 2022, YODY đã bán được bao nhiêu sản phẩm áo Polo?",
     options: [
-      { key: "A", text: "Gần 1 triệu sản phẩm" },
+      { key: "A", text: "Hơn 2 triệu sản phẩm" },
       { key: "B", text: "Trên 3 triệu sản phẩm" },
       { key: "C", text: "4 triệu sản phẩm" },
-      { key: "D", text: "Xấp xỉ 2 triệu sản phẩm" },
+      { key: "D", text: "Hơn 6 triệu sản phẩm" },
     ],
     correctAnswer: "D",
     explanation: ""
