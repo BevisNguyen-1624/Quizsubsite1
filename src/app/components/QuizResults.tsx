@@ -299,10 +299,10 @@ export function QuizResults({ score, totalQuestions, userId, onRestart }: QuizRe
     // Result title (wrapped)
     ctx.font = titleFont;
     ctx.fillStyle = "#1e293b";
-    let titleCY = ROW_TOP + 110;
+    let titleCY = ROW_TOP + 50;
     for (const line of wrapLines(result.title, RIGHT_MAX_W - 16, titleFont)) {
       ctx.fillText(line, RIGHT_CX, titleCY);
-      titleCY += 50;
+      titleCY += 38;
     }
     ctx.restore();
 
