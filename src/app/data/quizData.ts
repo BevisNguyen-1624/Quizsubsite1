@@ -219,7 +219,7 @@ export const quizQuestions: Question[] = [
   },
   {
     id: 18,
-    question: "YODY đã lọt vào Top 100 Doanh nghiệp có môi trường làm việc tốt nhất vào năm nào?",
+    question: "YODY đã lọt vào Top 100 Doanh nghiệp có môi trường làm việc tốt nhất Việt Nam vào năm nào?",
     options: [
       { key: "A", text: "2021" },
       { key: "B", text: "2022" },
